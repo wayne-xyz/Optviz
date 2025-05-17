@@ -1,2 +1,36 @@
-# Optviz
+# Optviz 
+
 A VS Code extension for visualizing optimization insights from LLVM, NVCC, XLA and more compilers
+
+## Features
+
+Pending
+
+## Requirements
+
+Clang++ req
+
+## Extension Settings
+
+Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+
+For example:
+
+This extension contributes the following settings:
+
+* `myExtension.enable`: Enable/disable this extension.
+* `myExtension.thing`: Set to `blah` to do something.
+
+## Known Issues
+
+Calling out known issues can help limit users opening duplicate issues against your extension.
+
+## Release Notes
+
+Users appreciate release notes as you update your extension.
+
+### 0.0.1
+
+Initial release of basic visaulzation. Inspired from https://github.com/leyli16/llvm-remarks-viewer-demo
+
+

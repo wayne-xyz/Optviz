@@ -1,0 +1,53 @@
+<!-- src/webview/chartPanel.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Optimization Dashboard</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body { font-family: sans-serif; margin: 0; padding: 1rem; }
+    canvas { width: 100% !important; height: auto !important; }
+  </style>
+</head>
+<body>
+  <h2>LLVM Optimization Remarks</h2>
+  <canvas id="remarkChart"></canvas>
+
+  <script>
+    const vscode = acquireVsCodeApi();
+
+    window.addEventListener('message', event => {
+      const { data } = event;
+
+      const labels = Object.keys(data);
+      const missed = labels.map(k => data[k].Missed || 0);
+      const passed = labels.map(k => data[k].Passed || 0);
+
+      new Chart(document.getElementById('remarkChart'), {
+        type: 'bar',
+        data: {
+          labels: labels,
+          datasets: [
+            {
+              label: 'Missed',
+              backgroundColor: 'rgba(255, 99, 132, 0.6)',
+              data: missed
+            },
+            {
+              label: 'Passed',
+              backgroundColor: 'rgba(75, 192, 192, 0.6)',
+              data: passed
+            }
+          ]
+        },
+        options: {
+          plugins: {
+            legend: { position: 'top' }
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>
