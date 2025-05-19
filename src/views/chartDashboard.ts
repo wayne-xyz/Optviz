@@ -39,6 +39,9 @@ export class ChartDashboard {
       chartData[pass][type] = (chartData[pass][type] || 0) + 1;
     }
 
-    ChartDashboard.panel.webview.postMessage(chartData);
+    ChartDashboard.panel.webview.postMessage({
+      chartData,
+      remarks
+    });
   }
 }

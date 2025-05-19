@@ -6,23 +6,67 @@
   <title>Optimization Dashboard</title>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <style>
-    body { font-family: sans-serif; margin: 0; padding: 1rem; }
-    canvas { width: 100% !important; height: auto !important; }
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 1rem;
+      background-color: #1e1e1e;
+      color: white;
+    }
+    canvas {
+      width: 100% !important;
+      height: auto !important;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 2rem;
+    }
+    th, td {
+      border: 1px solid #444;
+      padding: 0.5rem;
+      text-align: left;
+    }
+    th {
+      background-color: #333;
+    }
+    tr:nth-child(even) {
+      background-color: #2a2a2a;
+    }
   </style>
 </head>
 <body>
   <h2>LLVM Optimization Remarks</h2>
   <canvas id="remarkChart"></canvas>
 
+  <h2>Detailed Optimization Remarks</h2>
+  <table id="remarksTable">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Pass</th>
+        <th>Function</th>
+        <th>File</th>
+        <th>Line</th>
+        <th>Column</th>
+        <th>Message</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Filled dynamically -->
+    </tbody>
+  </table>
+
   <script>
     const vscode = acquireVsCodeApi();
 
     window.addEventListener('message', event => {
-      const { data } = event;
+      const { chartData, remarks } = event.data;
 
-      const labels = Object.keys(data);
-      const missed = labels.map(k => data[k].Missed || 0);
-      const passed = labels.map(k => data[k].Passed || 0);
+      // === Chart Logic ===
+      const labels = Object.keys(chartData);
+      const missed = labels.map(k => chartData[k].Missed || 0);
+      const passed = labels.map(k => chartData[k].Passed || 0);
 
       new Chart(document.getElementById('remarkChart'), {
         type: 'bar',
@@ -46,6 +90,23 @@
             legend: { position: 'top' }
           }
         }
+      });
+
+      // === Table Logic ===
+      const tbody = document.getElementById('remarksTable').getElementsByTagName('tbody')[0];
+      tbody.innerHTML = ''; // Clear old rows
+      remarks.forEach(r => {
+        const row = document.createElement('tr');
+        row.innerHTML = `
+          <td>${r.RemarkType}</td>
+          <td>${r.Pass}</td>
+          <td>${r.Function}</td>
+          <td>${r.File}</td>
+          <td>${r.Line}</td>
+          <td>${r.Column}</td>
+          <td>${r.Message}</td>
+        `;
+        tbody.appendChild(row);
       });
     });
   </script>
