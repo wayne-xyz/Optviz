@@ -6,4 +6,8 @@ export interface OptimizationRemark {
   Line: number;
   Column: number;
   Message: string;
+  metrics?: {
+    instructionsCount?: number; //for llvm/clang table
+    stackSize?: number; //for llvm/clang table
+  };
 }

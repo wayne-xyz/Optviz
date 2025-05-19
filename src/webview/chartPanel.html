@@ -13,6 +13,18 @@
       background-color: #1e1e1e;
       color: white;
     }
+    .chart-container {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+    .metrics-charts {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    .metrics-chart {
+      flex: 1;
+    }
     canvas {
       width: 100% !important;
       height: auto !important;
@@ -37,7 +49,19 @@
 </head>
 <body>
   <h2>LLVM Optimization Remarks</h2>
-  <canvas id="remarkChart"></canvas>
+  <div class="chart-container">
+    <canvas id="remarkChart"></canvas>
+  </div>
+
+  <h2>Function Metrics</h2>
+  <div class="metrics-charts">
+    <div class="metrics-chart">
+      <canvas id="instructionCountChart"></canvas>
+    </div>
+    <div class="metrics-chart">
+      <canvas id="stackSizeChart"></canvas>
+    </div>
+  </div>
 
   <h2>Detailed Optimization Remarks</h2>
   <table id="remarksTable">
@@ -61,9 +85,9 @@
     const vscode = acquireVsCodeApi();
 
     window.addEventListener('message', event => {
-      const { chartData, remarks } = event.data;
+      const { chartData, metricsData, remarks } = event.data;
 
-      // === Chart Logic ===
+      // === Optimization Type Chart ===
       const labels = Object.keys(chartData);
       const missed = labels.map(k => chartData[k].Missed || 0);
       const passed = labels.map(k => chartData[k].Passed || 0);
@@ -87,7 +111,63 @@
         },
         options: {
           plugins: {
-            legend: { position: 'top' }
+            legend: { position: 'top' },
+            title: {
+              display: true,
+              text: 'Optimization Types by Pass',
+              color: 'white'
+            }
+          }
+        }
+      });
+
+      // === Metrics Charts ===
+      const functionNames = Object.keys(metricsData);
+      const instructionCounts = functionNames.map(fn => metricsData[fn].instructionsCount || 0);
+      const stackSizes = functionNames.map(fn => metricsData[fn].stackSize || 0);
+
+      // Instruction Count Chart
+      new Chart(document.getElementById('instructionCountChart'), {
+        type: 'bar',
+        data: {
+          labels: functionNames,
+          datasets: [{
+            label: 'Instruction Count',
+            backgroundColor: 'rgba(54, 162, 235, 0.6)',
+            data: instructionCounts
+          }]
+        },
+        options: {
+          plugins: {
+            legend: { position: 'top' },
+            title: {
+              display: true,
+              text: 'Instructions per Function',
+              color: 'white'
+            }
+          }
+        }
+      });
+
+      // Stack Size Chart
+      new Chart(document.getElementById('stackSizeChart'), {
+        type: 'bar',
+        data: {
+          labels: functionNames,
+          datasets: [{
+            label: 'Stack Size (bytes)',
+            backgroundColor: 'rgba(153, 102, 255, 0.6)',
+            data: stackSizes
+          }]
+        },
+        options: {
+          plugins: {
+            legend: { position: 'top' },
+            title: {
+              display: true,
+              text: 'Stack Size per Function',
+              color: 'white'
+            }
           }
         }
       });

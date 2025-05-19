@@ -31,16 +31,37 @@ export class ChartDashboard {
       });
     }
 
+    // Process optimization type data
     const chartData: Record<string, { Missed?: number; Passed?: number; Analysis?: number }> = {};
+    // Process metrics data
+    const metricsData: Record<string, { instructionsCount?: number; stackSize?: number }> = {};
+
     for (const remark of remarks) {
+      const functionName = remark.Function;
+      
+      // Process optimization type data
       const pass = remark.Pass;
       if (!chartData[pass]) chartData[pass] = {};
       const type = remark.RemarkType;
       chartData[pass][type] = (chartData[pass][type] || 0) + 1;
+
+      // Process metrics data
+      if (remark.metrics) {
+        if (!metricsData[functionName]) {
+          metricsData[functionName] = {};
+        }
+        if (remark.metrics.instructionsCount !== undefined) {
+          metricsData[functionName].instructionsCount = remark.metrics.instructionsCount;
+        }
+        if (remark.metrics.stackSize !== undefined) {
+          metricsData[functionName].stackSize = remark.metrics.stackSize;
+        }
+      }
     }
 
     ChartDashboard.panel.webview.postMessage({
       chartData,
+      metricsData,
       remarks
     });
   }
