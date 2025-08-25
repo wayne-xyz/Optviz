@@ -1,0 +1,4567 @@
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: example2.cpp, Line: 33, Column: 24 }
+Function:        main
+Args:
+  - String:          ''''
+  - Callee:          _ZNSaIfEC2Ev
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/allocator.h', 
+                       Line: 168, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          main
+    DebugLoc:        { File: example2.cpp, Line: 32, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          main
+  - String:          ':'
+  - Line:            '1'
+  - String:          ':'
+  - Column:          '24'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/allocator.h', 
+                   Line: 168, Column: 7 }
+Function:        main
+Args:
+  - String:          ''''
+  - Callee:          _ZNSt15__new_allocatorIfEC2Ev
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/new_allocator.h', 
+                       Line: 88, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          main
+    DebugLoc:        { File: example2.cpp, Line: 32, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          allocator
+  - String:          ':'
+  - Line:            '0'
+  - String:          ':'
+  - Column:          '7'
+  - String:          ' @ '
+  - String:          main
+  - String:          ':'
+  - Line:            '1'
+  - String:          ':'
+  - Column:          '24'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/allocator.h', 
+                   Line: 168, Column: 7 }
+Function:        _ZNSaIfEC2Ev
+Args:
+  - String:          ''''
+  - Callee:          _ZNSt15__new_allocatorIfEC2Ev
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/new_allocator.h', 
+                       Line: 88, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _ZNSaIfEC2Ev
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/allocator.h', 
+                       Line: 168, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          allocator
+  - String:          ':'
+  - Line:            '0'
+  - String:          ':'
+  - Column:          '7'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                   Line: 2209, Column: 24 }
+Function:        _ZNSt6vectorIfSaIfEE17_S_check_init_lenEyRKS0_
+Args:
+  - String:          ''''
+  - Callee:          _ZNSaIfEC2ERKS_
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/allocator.h', 
+                       Line: 173, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _ZNSt6vectorIfSaIfEE17_S_check_init_lenEyRKS0_
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                       Line: 2208, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          _S_check_init_len
+  - String:          ':'
+  - Line:            '2'
+  - String:          ':'
+  - Column:          '24'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                   Line: 153, Column: 4 }
+Function:        _ZNSt12_Vector_baseIfSaIfEE12_Vector_implC2ERKS0_
+Args:
+  - String:          ''''
+  - Callee:          _ZNSaIfEC2ERKS_
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/allocator.h', 
+                       Line: 173, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _ZNSt12_Vector_baseIfSaIfEE12_Vector_implC2ERKS0_
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                       Line: 154, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          _Vector_impl
+  - String:          ':'
+  - Line:            '1'
+  - String:          ':'
+  - Column:          '4'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                   Line: 2223, Column: 28 }
+Function:        _ZNSt6vectorIfSaIfEE11_S_max_sizeERKS0_
+Args:
+  - String:          ''''
+  - Callee:          _ZNSt16allocator_traitsISaIfEE8max_sizeERKS0_
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/alloc_traits.h', 
+                       Line: 710, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _ZNSt6vectorIfSaIfEE11_S_max_sizeERKS0_
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                       Line: 2217, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          _S_max_size
+  - String:          ':'
+  - Line:            '7'
+  - String:          ':'
+  - Column:          '28'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/alloc_traits.h', 
+                   Line: 712, Column: 13 }
+Function:        _ZNSt6vectorIfSaIfEE11_S_max_sizeERKS0_
+Args:
+  - String:          ''''
+  - Callee:          _ZNKSt15__new_allocatorIfE8max_sizeEv
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/new_allocator.h', 
+                       Line: 183, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _ZNSt6vectorIfSaIfEE11_S_max_sizeERKS0_
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                       Line: 2217, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          max_size
+  - String:          ':'
+  - Line:            '3'
+  - String:          ':'
+  - Column:          '13'
+  - String:          ' @ '
+  - String:          _S_max_size
+  - String:          ':'
+  - Line:            '7'
+  - String:          ':'
+  - Column:          '28'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/alloc_traits.h', 
+                   Line: 712, Column: 13 }
+Function:        _ZNSt16allocator_traitsISaIfEE8max_sizeERKS0_
+Args:
+  - String:          ''''
+  - Callee:          _ZNKSt15__new_allocatorIfE8max_sizeEv
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/new_allocator.h', 
+                       Line: 183, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _ZNSt16allocator_traitsISaIfEE8max_sizeERKS0_
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/alloc_traits.h', 
+                       Line: 710, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          max_size
+  - String:          ':'
+  - Line:            '3'
+  - String:          ':'
+  - Column:          '13'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/new_allocator.h', 
+                   Line: 183, Column: 16 }
+Function:        _ZNSt16allocator_traitsISaIfEE8max_sizeERKS0_
+Args:
+  - String:          ''''
+  - Callee:          _ZNKSt15__new_allocatorIfE11_M_max_sizeEv
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/new_allocator.h', 
+                       Line: 231, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _ZNSt16allocator_traitsISaIfEE8max_sizeERKS0_
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/alloc_traits.h', 
+                       Line: 710, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          max_size
+  - String:          ':'
+  - Line:            '1'
+  - String:          ':'
+  - Column:          '16'
+  - String:          ' @ '
+  - String:          max_size
+  - String:          ':'
+  - Line:            '3'
+  - String:          ':'
+  - Column:          '13'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/new_allocator.h', 
+                   Line: 183, Column: 16 }
+Function:        _ZNSt6vectorIfSaIfEE11_S_max_sizeERKS0_
+Args:
+  - String:          ''''
+  - Callee:          _ZNKSt15__new_allocatorIfE11_M_max_sizeEv
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/new_allocator.h', 
+                       Line: 231, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _ZNSt6vectorIfSaIfEE11_S_max_sizeERKS0_
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                       Line: 2217, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          max_size
+  - String:          ':'
+  - Line:            '1'
+  - String:          ':'
+  - Column:          '16'
+  - String:          ' @ '
+  - String:          max_size
+  - String:          ':'
+  - Line:            '3'
+  - String:          ':'
+  - Column:          '13'
+  - String:          ' @ '
+  - String:          _S_max_size
+  - String:          ':'
+  - Line:            '7'
+  - String:          ':'
+  - Column:          '28'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/new_allocator.h', 
+                   Line: 134, Column: 35 }
+Function:        _ZNSt15__new_allocatorIfE8allocateEyPKv
+Args:
+  - String:          ''''
+  - Callee:          _ZNKSt15__new_allocatorIfE11_M_max_sizeEv
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/new_allocator.h', 
+                       Line: 231, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _ZNSt15__new_allocatorIfE8allocateEyPKv
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/new_allocator.h', 
+                       Line: 127, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          allocate
+  - String:          ':'
+  - Line:            '8'
+  - String:          ':'
+  - Column:          '35'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/new_allocator.h', 
+                   Line: 183, Column: 16 }
+Function:        _ZNKSt15__new_allocatorIfE8max_sizeEv
+Args:
+  - String:          ''''
+  - Callee:          _ZNKSt15__new_allocatorIfE11_M_max_sizeEv
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/new_allocator.h', 
+                       Line: 231, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _ZNKSt15__new_allocatorIfE8max_sizeEv
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/new_allocator.h', 
+                       Line: 183, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          max_size
+  - String:          ':'
+  - Line:            '1'
+  - String:          ':'
+  - Column:          '16'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/allocator.h', 
+                   Line: 173, Column: 9 }
+Function:        _ZNSt12_Vector_baseIfSaIfEE12_Vector_implC2ERKS0_
+Args:
+  - String:          ''''
+  - Callee:          _ZNSt15__new_allocatorIfEC2ERKS0_
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/new_allocator.h', 
+                       Line: 92, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _ZNSt12_Vector_baseIfSaIfEE12_Vector_implC2ERKS0_
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                       Line: 154, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          allocator
+  - String:          ':'
+  - Line:            '1'
+  - String:          ':'
+  - Column:          '9'
+  - String:          ' @ '
+  - String:          _Vector_impl
+  - String:          ':'
+  - Line:            '1'
+  - String:          ':'
+  - Column:          '4'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/allocator.h', 
+                   Line: 173, Column: 9 }
+Function:        _ZNSt6vectorIfSaIfEE17_S_check_init_lenEyRKS0_
+Args:
+  - String:          ''''
+  - Callee:          _ZNSt15__new_allocatorIfEC2ERKS0_
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/new_allocator.h', 
+                       Line: 92, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _ZNSt6vectorIfSaIfEE17_S_check_init_lenEyRKS0_
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                       Line: 2208, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          allocator
+  - String:          ':'
+  - Line:            '1'
+  - String:          ':'
+  - Column:          '9'
+  - String:          ' @ '
+  - String:          _S_check_init_len
+  - String:          ':'
+  - Line:            '2'
+  - String:          ':'
+  - Column:          '24'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/allocator.h', 
+                   Line: 173, Column: 9 }
+Function:        _ZNSaIfEC2ERKS_
+Args:
+  - String:          ''''
+  - Callee:          _ZNSt15__new_allocatorIfEC2ERKS0_
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/new_allocator.h', 
+                       Line: 92, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _ZNSaIfEC2ERKS_
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/allocator.h', 
+                       Line: 173, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          allocator
+  - String:          ':'
+  - Line:            '1'
+  - String:          ':'
+  - Column:          '9'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                   Line: 387, Column: 20 }
+Function:        _ZNSt12_Vector_baseIfSaIfEE11_M_allocateEy
+Args:
+  - String:          ''''
+  - Callee:          _ZNSt16allocator_traitsISaIfEE8allocateERS0_y
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/alloc_traits.h', 
+                       Line: 614, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _ZNSt12_Vector_baseIfSaIfEE11_M_allocateEy
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                       Line: 385, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          _M_allocate
+  - String:          ':'
+  - Line:            '3'
+  - String:          ':'
+  - Column:          '20'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_uninitialized.h', 
+                   Line: 896, Column: 18 }
+Function:        _ZNSt27__uninitialized_default_n_1ILb1EE18__uninit_default_nIPfyEET_S3_T0_
+Args:
+  - String:          ''''
+  - Callee:          _ZSt6fill_nIPfyfET_S1_T0_RKT1_
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_algobase.h', 
+                       Line: 1174, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _ZNSt27__uninitialized_default_n_1ILb1EE18__uninit_default_nIPfyEET_S3_T0_
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_uninitialized.h', 
+                       Line: 889, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          '__uninit_default_n<float *, unsigned long long>'
+  - String:          ':'
+  - Line:            '8'
+  - String:          ':'
+  - Column:          '18'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_algobase.h', 
+                   Line: 1178, Column: 14 }
+Function:        _ZNSt27__uninitialized_default_n_1ILb1EE18__uninit_default_nIPfyEET_S3_T0_
+Args:
+  - String:          ''''
+  - Callee:          _ZSt10__fill_n_aIPfyfET_S1_T0_RKT1_St26random_access_iterator_tag
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_algobase.h', 
+                       Line: 1139, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _ZNSt27__uninitialized_default_n_1ILb1EE18__uninit_default_nIPfyEET_S3_T0_
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_uninitialized.h', 
+                       Line: 889, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          'fill_n<float *, unsigned long long, float>'
+  - String:          ':'
+  - Line:            '5'
+  - String:          ':'
+  - Column:          '14'
+  - String:          ' @ '
+  - String:          '__uninit_default_n<float *, unsigned long long>'
+  - String:          ':'
+  - Line:            '8'
+  - String:          ':'
+  - Column:          '18'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_algobase.h', 
+                   Line: 1178, Column: 14 }
+Function:        _ZSt6fill_nIPfyfET_S1_T0_RKT1_
+Args:
+  - String:          ''''
+  - Callee:          _ZSt10__fill_n_aIPfyfET_S1_T0_RKT1_St26random_access_iterator_tag
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_algobase.h', 
+                       Line: 1139, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _ZSt6fill_nIPfyfET_S1_T0_RKT1_
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_algobase.h', 
+                       Line: 1174, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          'fill_n<float *, unsigned long long, float>'
+  - String:          ':'
+  - Line:            '5'
+  - String:          ':'
+  - Column:          '14'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_algobase.h', 
+                   Line: 1179, Column: 11 }
+Function:        _ZNSt27__uninitialized_default_n_1ILb1EE18__uninit_default_nIPfyEET_S3_T0_
+Args:
+  - String:          ''''
+  - Callee:          _ZSt19__iterator_categoryIPfENSt15iterator_traitsIT_E17iterator_categoryERKS2_
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_iterator_base_types.h', 
+                       Line: 242, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _ZNSt27__uninitialized_default_n_1ILb1EE18__uninit_default_nIPfyEET_S3_T0_
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_uninitialized.h', 
+                       Line: 889, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          'fill_n<float *, unsigned long long, float>'
+  - String:          ':'
+  - Line:            '6'
+  - String:          ':'
+  - Column:          '11'
+  - String:          ' @ '
+  - String:          '__uninit_default_n<float *, unsigned long long>'
+  - String:          ':'
+  - Line:            '8'
+  - String:          ':'
+  - Column:          '18'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_algobase.h', 
+                   Line: 1179, Column: 11 }
+Function:        _ZSt6fill_nIPfyfET_S1_T0_RKT1_
+Args:
+  - String:          ''''
+  - Callee:          _ZSt19__iterator_categoryIPfENSt15iterator_traitsIT_E17iterator_categoryERKS2_
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_iterator_base_types.h', 
+                       Line: 242, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _ZSt6fill_nIPfyfET_S1_T0_RKT1_
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_algobase.h', 
+                       Line: 1174, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          'fill_n<float *, unsigned long long, float>'
+  - String:          ':'
+  - Line:            '6'
+  - String:          ':'
+  - Column:          '11'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_algobase.h', 
+                   Line: 1148, Column: 7 }
+Function:        _ZSt6fill_nIPfyfET_S1_T0_RKT1_
+Args:
+  - String:          ''''
+  - Callee:          _ZSt8__fill_aIPffEvT_S1_RKT0_
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_algobase.h', 
+                       Line: 979, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _ZSt6fill_nIPfyfET_S1_T0_RKT1_
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_algobase.h', 
+                       Line: 1174, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          '__fill_n_a<float *, unsigned long long, float>'
+  - String:          ':'
+  - Line:            '11'
+  - String:          ':'
+  - Column:          '7'
+  - String:          ' @ '
+  - String:          'fill_n<float *, unsigned long long, float>'
+  - String:          ':'
+  - Line:            '5'
+  - String:          ':'
+  - Column:          '14'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_algobase.h', 
+                   Line: 1148, Column: 7 }
+Function:        _ZNSt27__uninitialized_default_n_1ILb1EE18__uninit_default_nIPfyEET_S3_T0_
+Args:
+  - String:          ''''
+  - Callee:          _ZSt8__fill_aIPffEvT_S1_RKT0_
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_algobase.h', 
+                       Line: 979, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _ZNSt27__uninitialized_default_n_1ILb1EE18__uninit_default_nIPfyEET_S3_T0_
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_uninitialized.h', 
+                       Line: 889, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          '__fill_n_a<float *, unsigned long long, float>'
+  - String:          ':'
+  - Line:            '11'
+  - String:          ':'
+  - Column:          '7'
+  - String:          ' @ '
+  - String:          'fill_n<float *, unsigned long long, float>'
+  - String:          ':'
+  - Line:            '5'
+  - String:          ':'
+  - Column:          '14'
+  - String:          ' @ '
+  - String:          '__uninit_default_n<float *, unsigned long long>'
+  - String:          ':'
+  - Line:            '8'
+  - String:          ':'
+  - Column:          '18'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_algobase.h', 
+                   Line: 1148, Column: 7 }
+Function:        _ZSt10__fill_n_aIPfyfET_S1_T0_RKT1_St26random_access_iterator_tag
+Args:
+  - String:          ''''
+  - Callee:          _ZSt8__fill_aIPffEvT_S1_RKT0_
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_algobase.h', 
+                       Line: 979, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _ZSt10__fill_n_aIPfyfET_S1_T0_RKT1_St26random_access_iterator_tag
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_algobase.h', 
+                       Line: 1139, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          '__fill_n_a<float *, unsigned long long, float>'
+  - String:          ':'
+  - Line:            '11'
+  - String:          ':'
+  - Column:          '7'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                   Line: 396, Column: 4 }
+Function:        _ZNSt12_Vector_baseIfSaIfEE13_M_deallocateEPfy
+Args:
+  - String:          ''''
+  - Callee:          _ZNSt16allocator_traitsISaIfEE10deallocateERS0_Pfy
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/alloc_traits.h', 
+                       Line: 649, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _ZNSt12_Vector_baseIfSaIfEE13_M_deallocateEPfy
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                       Line: 393, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          _M_deallocate
+  - String:          ':'
+  - Line:            '4'
+  - String:          ':'
+  - Column:          '4'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                   Line: 802, Column: 2 }
+Function:        _ZNSt6vectorIfSaIfEED2Ev
+Args:
+  - String:          ''''
+  - Callee:          _ZSt8_DestroyIPffEvT_S1_RSaIT0_E
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/alloc_traits.h', 
+                       Line: 1044, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _ZNSt6vectorIfSaIfEED2Ev
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                       Line: 801, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          '~vector'
+  - String:          ':'
+  - Line:            '2'
+  - String:          ':'
+  - Column:          '2'
+  - String:          ';'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/cmath', 
+                   Line: 450, Column: 12 }
+Function:        _ZSt4sqrtf
+Args:
+  - Callee:          sqrtf
+  - String:          ' will not be inlined into '
+  - Caller:          _ZSt4sqrtf
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/cmath', 
+                       Line: 450, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: example2.cpp, Line: 15, Column: 30 }
+Function:        _Z10heavy_calcRKSt6vectorIfSaIfEE
+Args:
+  - String:          ''''
+  - Callee:          _ZNKSt6vectorIfSaIfEE4sizeEv
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                       Line: 1118, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z10heavy_calcRKSt6vectorIfSaIfEE
+    DebugLoc:        { File: example2.cpp, Line: 13, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-15'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          heavy_calc
+  - String:          ':'
+  - Line:            '2'
+  - String:          ':'
+  - Column:          '30'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: example2.cpp, Line: 17, Column: 51 }
+Function:        _Z10heavy_calcRKSt6vectorIfSaIfEE
+Args:
+  - String:          ''''
+  - Callee:          _ZNKSt6vectorIfSaIfEEixEy
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                       Line: 1281, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z10heavy_calcRKSt6vectorIfSaIfEE
+    DebugLoc:        { File: example2.cpp, Line: 13, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          heavy_calc
+  - String:          ':'
+  - Line:            '4'
+  - String:          ':'
+  - Column:          '51'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: example2.cpp, Line: 17, Column: 41 }
+Function:        _Z10heavy_calcRKSt6vectorIfSaIfEE
+Args:
+  - String:          ''''
+  - Callee:          _ZSt4fabsf
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/cmath', 
+                       Line: 246, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z10heavy_calcRKSt6vectorIfSaIfEE
+    DebugLoc:        { File: example2.cpp, Line: 13, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-30'
+  - String:          ', threshold='
+  - Threshold:       '487'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          heavy_calc
+  - String:          ':'
+  - Line:            '4'
+  - String:          ':'
+  - Column:          '41'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: example2.cpp, Line: 17, Column: 31 }
+Function:        _Z10heavy_calcRKSt6vectorIfSaIfEE
+Args:
+  - String:          ''''
+  - Callee:          _ZSt4sqrtf
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/cmath', 
+                       Line: 450, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z10heavy_calcRKSt6vectorIfSaIfEE
+    DebugLoc:        { File: example2.cpp, Line: 13, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-30'
+  - String:          ', threshold='
+  - Threshold:       '487'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          heavy_calc
+  - String:          ':'
+  - Line:            '4'
+  - String:          ':'
+  - Column:          '31'
+  - String:          ';'
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                   Line: 1119, Column: 34 }
+Function:        _Z10heavy_calcRKSt6vectorIfSaIfEE
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                       Line: 1119, Column: 34 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                   Line: 1119, Column: 34 }
+Function:        _Z10heavy_calcRKSt6vectorIfSaIfEE
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                       Line: 1119, Column: 34 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                   Line: 1119, Column: 60 }
+Function:        _Z10heavy_calcRKSt6vectorIfSaIfEE
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                       Line: 1119, Column: 60 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                   Line: 1119, Column: 44 }
+Function:        _Z10heavy_calcRKSt6vectorIfSaIfEE
+Args:
+  - String:          'hoisting '
+  - Inst:            ptrtoint
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                       Line: 1119, Column: 44 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                   Line: 1119, Column: 44 }
+Function:        _Z10heavy_calcRKSt6vectorIfSaIfEE
+Args:
+  - String:          'hoisting '
+  - Inst:            ptrtoint
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                       Line: 1119, Column: 44 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                   Line: 1119, Column: 44 }
+Function:        _Z10heavy_calcRKSt6vectorIfSaIfEE
+Args:
+  - String:          'hoisting '
+  - Inst:            sub
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                       Line: 1119, Column: 44 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                   Line: 1119, Column: 44 }
+Function:        _Z10heavy_calcRKSt6vectorIfSaIfEE
+Args:
+  - String:          'hoisting '
+  - Inst:            ashr
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                       Line: 1119, Column: 44 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                   Line: 1120, Column: 12 }
+Function:        _Z10heavy_calcRKSt6vectorIfSaIfEE
+Args:
+  - String:          'hoisting '
+  - Inst:            icmp
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                       Line: 1120, Column: 12 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                   Line: 1120, Column: 12 }
+Function:        _Z10heavy_calcRKSt6vectorIfSaIfEE
+Args:
+  - String:          'hoisting '
+  - Inst:            call
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                       Line: 1120, Column: 12 }
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                   Line: 2224, Column: 9 }
+Function:        _ZNSt6vectorIfSaIfEE11_S_max_sizeERKS0_
+Args:
+  - String:          ''''
+  - Callee:          _ZSt3minIyERKT_S2_S2_
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_algobase.h', 
+                       Line: 235, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _ZNSt6vectorIfSaIfEE11_S_max_sizeERKS0_
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                       Line: 2217, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-20'
+  - String:          ', threshold='
+  - Threshold:       '487'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          _S_max_size
+  - String:          ':'
+  - Line:            '8'
+  - String:          ':'
+  - Column:          '9'
+  - String:          ';'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                   Line: 2210, Column: 4 }
+Function:        _ZNSt6vectorIfSaIfEE17_S_check_init_lenEyRKS0_
+Args:
+  - Callee:          _ZSt20__throw_length_errorPKc
+  - String:          ' will not be inlined into '
+  - Caller:          _ZNSt6vectorIfSaIfEE17_S_check_init_lenEyRKS0_
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                       Line: 2208, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                   Line: 2209, Column: 12 }
+Function:        _ZNSt6vectorIfSaIfEE17_S_check_init_lenEyRKS0_
+Args:
+  - String:          ''''
+  - Callee:          _ZNSt6vectorIfSaIfEE11_S_max_sizeERKS0_
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                       Line: 2217, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _ZNSt6vectorIfSaIfEE17_S_check_init_lenEyRKS0_
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                       Line: 2208, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          _S_check_init_len
+  - String:          ':'
+  - Line:            '2'
+  - String:          ':'
+  - Column:          '12'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                   Line: 2209, Column: 6 }
+Function:        _ZNSt6vectorIfSaIfEE17_S_check_init_lenEyRKS0_
+Args:
+  - String:          ''''
+  - Callee:          _ZNSt15__new_allocatorIfED2Ev
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/new_allocator.h', 
+                       Line: 104, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _ZNSt6vectorIfSaIfEE17_S_check_init_lenEyRKS0_
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                       Line: 2208, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          _S_check_init_len
+  - String:          ':'
+  - Line:            '2'
+  - String:          ':'
+  - Column:          '6'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                   Line: 152, Column: 2 }
+Function:        _ZNSt12_Vector_baseIfSaIfEE12_Vector_implC2ERKS0_
+Args:
+  - String:          ''''
+  - Callee:          _ZNSt12_Vector_baseIfSaIfEE17_Vector_impl_dataC2Ev
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                       Line: 107, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _ZNSt12_Vector_baseIfSaIfEE12_Vector_implC2ERKS0_
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                       Line: 154, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-30'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          _Vector_impl
+  - String:          ':'
+  - Line:            '0'
+  - String:          ':'
+  - Column:          '2'
+  - String:          ';'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/new_allocator.h', 
+                   Line: 139, Column: 8 }
+Function:        _ZNSt15__new_allocatorIfE8allocateEyPKv
+Args:
+  - Callee:          _ZSt28__throw_bad_array_new_lengthv
+  - String:          ' will not be inlined into '
+  - Caller:          _ZNSt15__new_allocatorIfE8allocateEyPKv
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/new_allocator.h', 
+                       Line: 127, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/new_allocator.h', 
+                   Line: 140, Column: 6 }
+Function:        _ZNSt15__new_allocatorIfE8allocateEyPKv
+Args:
+  - Callee:          _ZSt17__throw_bad_allocv
+  - String:          ' will not be inlined into '
+  - Caller:          _ZNSt15__new_allocatorIfE8allocateEyPKv
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/new_allocator.h', 
+                       Line: 127, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/new_allocator.h', 
+                   Line: 151, Column: 27 }
+Function:        _ZNSt15__new_allocatorIfE8allocateEyPKv
+Args:
+  - Callee:          _Znwy
+  - String:          ' will not be inlined into '
+  - Caller:          _ZNSt15__new_allocatorIfE8allocateEyPKv
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/new_allocator.h', 
+                       Line: 127, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/alloc_traits.h', 
+                   Line: 614, Column: 20 }
+Function:        _ZNSt12_Vector_baseIfSaIfEE11_M_allocateEy
+Args:
+  - String:          ''''
+  - Callee:          _ZNSt15__new_allocatorIfE8allocateEyPKv
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/new_allocator.h', 
+                       Line: 127, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _ZNSt12_Vector_baseIfSaIfEE11_M_allocateEy
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                       Line: 385, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '75'
+  - String:          ', threshold='
+  - Threshold:       '250'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          allocate
+  - String:          ':'
+  - Line:            '1'
+  - String:          ':'
+  - Column:          '20'
+  - String:          ' @ '
+  - String:          _M_allocate
+  - String:          ':'
+  - Line:            '3'
+  - String:          ':'
+  - Column:          '20'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                   Line: 405, Column: 33 }
+Function:        _ZNSt12_Vector_baseIfSaIfEE17_M_create_storageEy
+Args:
+  - String:          ''''
+  - Callee:          _ZNSt12_Vector_baseIfSaIfEE11_M_allocateEy
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                       Line: 385, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _ZNSt12_Vector_baseIfSaIfEE17_M_create_storageEy
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                       Line: 404, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '90'
+  - String:          ', threshold='
+  - Threshold:       '250'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          _M_create_storage
+  - String:          ':'
+  - Line:            '2'
+  - String:          ':'
+  - Column:          '33'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                   Line: 340, Column: 9 }
+Function:        _ZNSt12_Vector_baseIfSaIfEEC2EyRKS0_
+Args:
+  - String:          ''''
+  - Callee:          _ZNSt12_Vector_baseIfSaIfEE12_Vector_implC2ERKS0_
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                       Line: 154, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _ZNSt12_Vector_baseIfSaIfEEC2EyRKS0_
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                       Line: 341, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          _Vector_base
+  - String:          ':'
+  - Line:            '1'
+  - String:          ':'
+  - Column:          '9'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                   Line: 341, Column: 9 }
+Function:        _ZNSt12_Vector_baseIfSaIfEEC2EyRKS0_
+Args:
+  - String:          ''''
+  - Callee:          _ZNSt12_Vector_baseIfSaIfEE17_M_create_storageEy
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                       Line: 404, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _ZNSt12_Vector_baseIfSaIfEEC2EyRKS0_
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                       Line: 341, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '105'
+  - String:          ', threshold='
+  - Threshold:       '250'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          _Vector_base
+  - String:          ':'
+  - Line:            '2'
+  - String:          ':'
+  - Column:          '9'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                   Line: 341, Column: 33 }
+Function:        _ZNSt12_Vector_baseIfSaIfEEC2EyRKS0_
+Args:
+  - String:          ''''
+  - Callee:          _ZNSt15__new_allocatorIfED2Ev
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/new_allocator.h', 
+                       Line: 104, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _ZNSt12_Vector_baseIfSaIfEEC2EyRKS0_
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                       Line: 341, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '45'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          _Vector_base
+  - String:          ':'
+  - Line:            '2'
+  - String:          ':'
+  - Column:          '33'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_uninitialized.h', 
+                   Line: 894, Column: 8 }
+Function:        _ZNSt27__uninitialized_default_n_1ILb1EE18__uninit_default_nIPfyEET_S3_T0_
+Args:
+  - String:          ''''
+  - Callee:          _ZSt10_ConstructIfJEEvPT_DpOT0_
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_construct.h', 
+                       Line: 124, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _ZNSt27__uninitialized_default_n_1ILb1EE18__uninit_default_nIPfyEET_S3_T0_
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_uninitialized.h', 
+                       Line: 889, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-30'
+  - String:          ', threshold='
+  - Threshold:       '487'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          '__uninit_default_n<float *, unsigned long long>'
+  - String:          ':'
+  - Line:            '6'
+  - String:          ':'
+  - Column:          '8'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_algobase.h', 
+                   Line: 1178, Column: 39 }
+Function:        _ZNSt27__uninitialized_default_n_1ILb1EE18__uninit_default_nIPfyEET_S3_T0_
+Args:
+  - String:          ''''
+  - Callee:          _ZSt17__size_to_integery
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_algobase.h', 
+                       Line: 1028, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _ZNSt27__uninitialized_default_n_1ILb1EE18__uninit_default_nIPfyEET_S3_T0_
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_uninitialized.h', 
+                       Line: 889, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '487'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          'fill_n<float *, unsigned long long, float>'
+  - String:          ':'
+  - Line:            '5'
+  - String:          ':'
+  - Column:          '39'
+  - String:          ' @ '
+  - String:          '__uninit_default_n<float *, unsigned long long>'
+  - String:          ':'
+  - Line:            '8'
+  - String:          ':'
+  - Column:          '18'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_algobase.h', 
+                   Line: 979, Column: 7 }
+Function:        _ZNSt27__uninitialized_default_n_1ILb1EE18__uninit_default_nIPfyEET_S3_T0_
+Args:
+  - String:          ''''
+  - Callee:          _ZSt9__fill_a1IPffEvT_S1_RKT0_
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_algobase.h', 
+                       Line: 899, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _ZNSt27__uninitialized_default_n_1ILb1EE18__uninit_default_nIPfyEET_S3_T0_
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_uninitialized.h', 
+                       Line: 889, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-15'
+  - String:          ', threshold='
+  - Threshold:       '325'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          '__fill_a<float *, float>'
+  - String:          ':'
+  - Line:            '1'
+  - String:          ':'
+  - Column:          '7'
+  - String:          ' @ '
+  - String:          '__fill_n_a<float *, unsigned long long, float>'
+  - String:          ':'
+  - Line:            '11'
+  - String:          ':'
+  - Column:          '7'
+  - String:          ' @ '
+  - String:          'fill_n<float *, unsigned long long, float>'
+  - String:          ':'
+  - Line:            '5'
+  - String:          ':'
+  - Column:          '14'
+  - String:          ' @ '
+  - String:          '__uninit_default_n<float *, unsigned long long>'
+  - String:          ':'
+  - Line:            '8'
+  - String:          ':'
+  - Column:          '18'
+  - String:          ';'
+...
+--- !Passed
+Pass:            loop-idiom
+Name:            ProcessLoopStridedStore
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_algobase.h', 
+                   Line: 925, Column: 11 }
+Function:        _ZNSt27__uninitialized_default_n_1ILb1EE18__uninit_default_nIPfyEET_S3_T0_
+Args:
+  - String:          'Transformed loop-strided store in '
+  - Function:        _ZNSt27__uninitialized_default_n_1ILb1EE18__uninit_default_nIPfyEET_S3_T0_
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_uninitialized.h', 
+                       Line: 889, Column: 0 }
+  - String:          ' function into a call to '
+  - NewFunction:     llvm.memset.p0.i64
+  - String:          '() intrinsic'
+  - FromBlock:       ''
+  - ToBlock:         ''
+...
+--- !Passed
+Pass:            loop-delete
+Name:            Invariant
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_algobase.h', 
+                   Line: 924, Column: 7 }
+Function:        _ZNSt27__uninitialized_default_n_1ILb1EE18__uninit_default_nIPfyEET_S3_T0_
+Args:
+  - String:          Loop deleted because it is invariant
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_uninitialized.h', 
+                   Line: 939, Column: 14 }
+Function:        _ZSt25__uninitialized_default_nIPfyET_S1_T0_
+Args:
+  - String:          ''''
+  - Callee:          _ZNSt27__uninitialized_default_n_1ILb1EE18__uninit_default_nIPfyEET_S3_T0_
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_uninitialized.h', 
+                       Line: 889, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _ZSt25__uninitialized_default_nIPfyET_S1_T0_
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_uninitialized.h', 
+                       Line: 926, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '10'
+  - String:          ', threshold='
+  - Threshold:       '250'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          '__uninitialized_default_n<float *, unsigned long long>'
+  - String:          ':'
+  - Line:            '14'
+  - String:          ':'
+  - Column:          '14'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_uninitialized.h', 
+                   Line: 996, Column: 14 }
+Function:        _ZSt27__uninitialized_default_n_aIPfyfET_S1_T0_RSaIT1_E
+Args:
+  - String:          ''''
+  - Callee:          _ZSt25__uninitialized_default_nIPfyET_S1_T0_
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_uninitialized.h', 
+                       Line: 926, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _ZSt27__uninitialized_default_n_aIPfyfET_S1_T0_RSaIT1_E
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_uninitialized.h', 
+                       Line: 996, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '10'
+  - String:          ', threshold='
+  - Threshold:       '325'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          '__uninitialized_default_n_a<float *, unsigned long long, float>'
+  - String:          ':'
+  - Line:            '2'
+  - String:          ':'
+  - Column:          '14'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                   Line: 2011, Column: 9 }
+Function:        _ZNSt6vectorIfSaIfEE21_M_default_initializeEy
+Args:
+  - String:          ''''
+  - Callee:          _ZNSt12_Vector_baseIfSaIfEE19_M_get_Tp_allocatorEv
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                       Line: 308, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _ZNSt6vectorIfSaIfEE21_M_default_initializeEy
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                       Line: 2008, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          _M_default_initialize
+  - String:          ':'
+  - Line:            '4'
+  - String:          ':'
+  - Column:          '9'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                   Line: 2010, Column: 4 }
+Function:        _ZNSt6vectorIfSaIfEE21_M_default_initializeEy
+Args:
+  - String:          ''''
+  - Callee:          _ZSt27__uninitialized_default_n_aIPfyfET_S1_T0_RSaIT1_E
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_uninitialized.h', 
+                       Line: 996, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _ZNSt6vectorIfSaIfEE21_M_default_initializeEy
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                       Line: 2008, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '5'
+  - String:          ', threshold='
+  - Threshold:       '325'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          _M_default_initialize
+  - String:          ':'
+  - Line:            '3'
+  - String:          ':'
+  - Column:          '4'
+  - String:          ';'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/new_allocator.h', 
+                   Line: 172, Column: 2 }
+Function:        _ZNSt15__new_allocatorIfE10deallocateEPfy
+Args:
+  - Callee:          _ZdlPv
+  - String:          ' will not be inlined into '
+  - Caller:          _ZNSt15__new_allocatorIfE10deallocateEPfy
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/new_allocator.h', 
+                       Line: 157, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/alloc_traits.h', 
+                   Line: 649, Column: 13 }
+Function:        _ZNSt12_Vector_baseIfSaIfEE13_M_deallocateEPfy
+Args:
+  - String:          ''''
+  - Callee:          _ZNSt15__new_allocatorIfE10deallocateEPfy
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/new_allocator.h', 
+                       Line: 157, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _ZNSt12_Vector_baseIfSaIfEE13_M_deallocateEPfy
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                       Line: 393, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-10'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          deallocate
+  - String:          ':'
+  - Line:            '1'
+  - String:          ':'
+  - Column:          '13'
+  - String:          ' @ '
+  - String:          _M_deallocate
+  - String:          ':'
+  - Line:            '4'
+  - String:          ':'
+  - Column:          '4'
+  - String:          ';'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+Function:        __clang_call_terminate
+Args:
+  - Callee:          __cxa_begin_catch
+  - String:          ' will not be inlined into '
+  - Caller:          __clang_call_terminate
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+Function:        __clang_call_terminate
+Args:
+  - Callee:          _ZSt9terminatev
+  - String:          ' will not be inlined into '
+  - Caller:          __clang_call_terminate
+  - String:          ' because its definition is unavailable'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                   Line: 375, Column: 2 }
+Function:        _ZNSt12_Vector_baseIfSaIfEED2Ev
+Args:
+  - String:          ''''
+  - Callee:          _ZNSt12_Vector_baseIfSaIfEE13_M_deallocateEPfy
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                       Line: 393, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _ZNSt12_Vector_baseIfSaIfEED2Ev
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                       Line: 374, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '0'
+  - String:          ', threshold='
+  - Threshold:       '250'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          '~_Vector_base'
+  - String:          ':'
+  - Line:            '2'
+  - String:          ':'
+  - Column:          '2'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                   Line: 377, Column: 7 }
+Function:        _ZNSt12_Vector_baseIfSaIfEED2Ev
+Args:
+  - String:          ''''
+  - Callee:          _ZNSt15__new_allocatorIfED2Ev
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/new_allocator.h', 
+                       Line: 104, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _ZNSt12_Vector_baseIfSaIfEED2Ev
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                       Line: 374, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          '~_Vector_base'
+  - String:          ':'
+  - Line:            '4'
+  - String:          ':'
+  - Column:          '7'
+  - String:          ';'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                   Line: 375, Column: 2 }
+Function:        _ZNSt12_Vector_baseIfSaIfEED2Ev
+Args:
+  - String:          ''''
+  - Callee:          __clang_call_terminate
+  - String:          ''' not inlined into '''
+  - Caller:          _ZNSt12_Vector_baseIfSaIfEED2Ev
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                       Line: 374, Column: 0 }
+  - String:          ''' because it should never be inlined '
+  - String:          '(cost=never)'
+  - String:          ': '
+  - Reason:          noinline function attribute
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                   Line: 587, Column: 15 }
+Function:        _ZNSt6vectorIfSaIfEEC2EyRKS0_
+Args:
+  - String:          ''''
+  - Callee:          _ZNSt6vectorIfSaIfEE17_S_check_init_lenEyRKS0_
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                       Line: 2208, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _ZNSt6vectorIfSaIfEEC2EyRKS0_
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                       Line: 588, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '5'
+  - String:          ', threshold='
+  - Threshold:       '250'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          vector
+  - String:          ':'
+  - Line:            '1'
+  - String:          ':'
+  - Column:          '15'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                   Line: 587, Column: 9 }
+Function:        _ZNSt6vectorIfSaIfEEC2EyRKS0_
+Args:
+  - String:          ''''
+  - Callee:          _ZNSt12_Vector_baseIfSaIfEEC2EyRKS0_
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                       Line: 341, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _ZNSt6vectorIfSaIfEEC2EyRKS0_
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                       Line: 588, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '105'
+  - String:          ', threshold='
+  - Threshold:       '250'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          vector
+  - String:          ':'
+  - Line:            '1'
+  - String:          ':'
+  - Column:          '9'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                   Line: 588, Column: 9 }
+Function:        _ZNSt6vectorIfSaIfEEC2EyRKS0_
+Args:
+  - String:          ''''
+  - Callee:          _ZNSt6vectorIfSaIfEE21_M_default_initializeEy
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                       Line: 2008, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _ZNSt6vectorIfSaIfEEC2EyRKS0_
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                       Line: 588, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '20'
+  - String:          ', threshold='
+  - Threshold:       '250'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          vector
+  - String:          ':'
+  - Line:            '2'
+  - String:          ':'
+  - Column:          '9'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                   Line: 588, Column: 37 }
+Function:        _ZNSt6vectorIfSaIfEEC2EyRKS0_
+Args:
+  - String:          ''''
+  - Callee:          _ZNSt12_Vector_baseIfSaIfEED2Ev
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                       Line: 374, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _ZNSt6vectorIfSaIfEEC2EyRKS0_
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                       Line: 588, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '15'
+  - String:          ', threshold='
+  - Threshold:       '45'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          vector
+  - String:          ':'
+  - Line:            '2'
+  - String:          ':'
+  - Column:          '37'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                   Line: 803, Column: 9 }
+Function:        _ZNSt6vectorIfSaIfEED2Ev
+Args:
+  - String:          ''''
+  - Callee:          _ZNSt12_Vector_baseIfSaIfEE19_M_get_Tp_allocatorEv
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                       Line: 308, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _ZNSt6vectorIfSaIfEED2Ev
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                       Line: 801, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          '~vector'
+  - String:          ':'
+  - Line:            '3'
+  - String:          ':'
+  - Column:          '9'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/alloc_traits.h', 
+                   Line: 1045, Column: 7 }
+Function:        _ZNSt6vectorIfSaIfEED2Ev
+Args:
+  - String:          ''''
+  - Callee:          _ZSt8_DestroyIPfEvT_S1_
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_construct.h', 
+                       Line: 203, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _ZNSt6vectorIfSaIfEED2Ev
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                       Line: 801, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-40'
+  - String:          ', threshold='
+  - Threshold:       '487'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          '_Destroy<float *, float>'
+  - String:          ':'
+  - Line:            '3'
+  - String:          ':'
+  - Column:          '7'
+  - String:          ' @ '
+  - String:          '~vector'
+  - String:          ':'
+  - Line:            '2'
+  - String:          ':'
+  - Column:          '2'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                   Line: 805, Column: 7 }
+Function:        _ZNSt6vectorIfSaIfEED2Ev
+Args:
+  - String:          ''''
+  - Callee:          _ZNSt12_Vector_baseIfSaIfEED2Ev
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                       Line: 374, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _ZNSt6vectorIfSaIfEED2Ev
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                       Line: 801, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '15'
+  - String:          ', threshold='
+  - Threshold:       '250'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          '~vector'
+  - String:          ':'
+  - Line:            '5'
+  - String:          ':'
+  - Column:          '7'
+  - String:          ';'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                   Line: 802, Column: 2 }
+Function:        _ZNSt6vectorIfSaIfEED2Ev
+Args:
+  - String:          ''''
+  - Callee:          __clang_call_terminate
+  - String:          ''' not inlined into '''
+  - Caller:          _ZNSt6vectorIfSaIfEED2Ev
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                       Line: 801, Column: 0 }
+  - String:          ''' because it should never be inlined '
+  - String:          '(cost=never)'
+  - String:          ': '
+  - Reason:          noinline function attribute
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: example2.cpp, Line: 33, Column: 24 }
+Function:        main
+Args:
+  - String:          ''''
+  - Callee:          _ZNSt6vectorIfSaIfEEC2EyRKS0_
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                       Line: 588, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          main
+    DebugLoc:        { File: example2.cpp, Line: 32, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '5'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          main
+  - String:          ':'
+  - Line:            '1'
+  - String:          ':'
+  - Column:          '24'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: example2.cpp, Line: 33, Column: 24 }
+Function:        main
+Args:
+  - String:          ''''
+  - Callee:          _ZNSt15__new_allocatorIfED2Ev
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/new_allocator.h', 
+                       Line: 104, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          main
+    DebugLoc:        { File: example2.cpp, Line: 32, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          main
+  - String:          ':'
+  - Line:            '1'
+  - String:          ':'
+  - Column:          '24'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: example2.cpp, Line: 33, Column: 24 }
+Function:        main
+Args:
+  - String:          ''''
+  - Callee:          _ZNSt15__new_allocatorIfED2Ev
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/new_allocator.h', 
+                       Line: 104, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          main
+    DebugLoc:        { File: example2.cpp, Line: 32, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '45'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          main
+  - String:          ':'
+  - Line:            '1'
+  - String:          ':'
+  - Column:          '24'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: example2.cpp, Line: 34, Column: 36 }
+Function:        main
+Args:
+  - String:          ''''
+  - Callee:          _ZNSt6vectorIfSaIfEEixEy
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                       Line: 1262, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          main
+    DebugLoc:        { File: example2.cpp, Line: 32, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-40'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          main
+  - String:          ':'
+  - Line:            '2'
+  - String:          ':'
+  - Column:          '36'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: example2.cpp, Line: 39, Column: 13 }
+Function:        main
+Args:
+  - String:          ''''
+  - Callee:          _ZL9small_addi
+  - String:          ''' inlined into '''
+  - Caller:          main
+    DebugLoc:        { File: example2.cpp, Line: 32, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-15035'
+  - String:          ', threshold='
+  - Threshold:       '487'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          main
+  - String:          ':'
+  - Line:            '7'
+  - String:          ':'
+  - Column:          '13'
+  - String:          ';'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: example2.cpp, Line: 40, Column: 13 }
+Function:        main
+Args:
+  - String:          ''''
+  - Callee:          _Z10heavy_calcRKSt6vectorIfSaIfEE
+    DebugLoc:        { File: example2.cpp, Line: 13, Column: 0 }
+  - String:          ''' not inlined into '''
+  - Caller:          main
+    DebugLoc:        { File: example2.cpp, Line: 32, Column: 0 }
+  - String:          ''' because it should never be inlined '
+  - String:          '(cost=never)'
+  - String:          ': '
+  - Reason:          noinline function attribute
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: example2.cpp, Line: 41, Column: 13 }
+Function:        main
+Args:
+  - String:          ''''
+  - Callee:          _Z10sum_scaledPii
+    DebugLoc:        { File: example2.cpp, Line: 23, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          main
+    DebugLoc:        { File: example2.cpp, Line: 32, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '5'
+  - String:          ', threshold='
+  - Threshold:       '250'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          main
+  - String:          ':'
+  - Line:            '9'
+  - String:          ':'
+  - Column:          '13'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: example2.cpp, Line: 43, Column: 1 }
+Function:        main
+Args:
+  - String:          ''''
+  - Callee:          _ZNSt6vectorIfSaIfEED2Ev
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                       Line: 801, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          main
+    DebugLoc:        { File: example2.cpp, Line: 32, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '10'
+  - String:          ', threshold='
+  - Threshold:       '250'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          main
+  - String:          ':'
+  - Line:            '11'
+  - String:          ':'
+  - Column:          '1'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: example2.cpp, Line: 43, Column: 1 }
+Function:        main
+Args:
+  - String:          ''''
+  - Callee:          _ZNSt6vectorIfSaIfEED2Ev
+    DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/bits/stl_vector.h', 
+                       Line: 801, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          main
+    DebugLoc:        { File: example2.cpp, Line: 32, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '10'
+  - String:          ', threshold='
+  - Threshold:       '45'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          main
+  - String:          ':'
+  - Line:            '11'
+  - String:          ':'
+  - Column:          '1'
+  - String:          ';'
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: example2.cpp, Line: 27, Column: 16 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: example2.cpp, Line: 37, Column: 43 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: example2.cpp, Line: 27, Column: 16 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: example2.cpp, Line: 37, Column: 43 }
+...
+--- !Passed
+Pass:            loop-vectorize
+Name:            Vectorized
+DebugLoc:        { File: example2.cpp, Line: 15, Column: 5 }
+Function:        _Z10heavy_calcRKSt6vectorIfSaIfEE
+Args:
+  - String:          'vectorized '
+  - String:          ''
+  - String:          'loop (vectorization width: '
+  - VectorizationFactor: '4'
+  - String:          ', interleaved count: '
+  - InterleaveCount: '2'
+  - String:          ')'
+...
+--- !Passed
+Pass:            slp-vectorizer
+Name:            VectorizedList
+DebugLoc:        { File: example2.cpp, Line: 15, Column: 5 }
+Function:        _Z10heavy_calcRKSt6vectorIfSaIfEE
+Args:
+  - String:          'SLP vectorized with cost '
+  - Cost:            '-62'
+  - String:          ' and with tree size '
+  - TreeSize:        '3'
+...
+--- !Passed
+Pass:            slp-vectorizer
+Name:            VectorizedList
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/cmath', 
+                   Line: 450, Column: 12 }
+Function:        _Z10heavy_calcRKSt6vectorIfSaIfEE
+Args:
+  - String:          'SLP vectorized with cost '
+  - Cost:            '-62'
+  - String:          ' and with tree size '
+  - TreeSize:        '3'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+Function:        _Z10heavy_calcRKSt6vectorIfSaIfEE
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+Function:        _Z10heavy_calcRKSt6vectorIfSaIfEE
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Passed
+Pass:            loop-vectorize
+Name:            Vectorized
+DebugLoc:        { File: example2.cpp, Line: 26, Column: 5 }
+Function:        _Z10sum_scaledPii
+Args:
+  - String:          'vectorized '
+  - String:          ''
+  - String:          'loop (vectorization width: '
+  - VectorizationFactor: '4'
+  - String:          ', interleaved count: '
+  - InterleaveCount: '2'
+  - String:          ')'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+DebugLoc:        { File: example2.cpp, Line: 26, Column: 23 }
+Function:        _Z10sum_scaledPii
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Passed
+Pass:            loop-vectorize
+Name:            Vectorized
+DebugLoc:        { File: example2.cpp, Line: 34, Column: 5 }
+Function:        main
+Args:
+  - String:          'vectorized '
+  - String:          ''
+  - String:          'loop (vectorization width: '
+  - VectorizationFactor: '4'
+  - String:          ', interleaved count: '
+  - InterleaveCount: '2'
+  - String:          ')'
+...
+--- !Passed
+Pass:            loop-vectorize
+Name:            Vectorized
+DebugLoc:        { File: example2.cpp, Line: 37, Column: 5 }
+Function:        main
+Args:
+  - String:          'vectorized '
+  - String:          ''
+  - String:          'loop (vectorization width: '
+  - VectorizationFactor: '4'
+  - String:          ', interleaved count: '
+  - InterleaveCount: '2'
+  - String:          ')'
+...
+--- !Passed
+Pass:            loop-vectorize
+Name:            Vectorized
+DebugLoc:        { File: example2.cpp, Line: 26, Column: 5 }
+Function:        main
+Args:
+  - String:          'vectorized '
+  - String:          ''
+  - String:          'loop (vectorization width: '
+  - VectorizationFactor: '4'
+  - String:          ', interleaved count: '
+  - InterleaveCount: '2'
+  - String:          ')'
+...
+--- !Passed
+Pass:            loop-unroll
+Name:            PartialUnrolled
+DebugLoc:        { File: example2.cpp, Line: 37, Column: 5 }
+Function:        main
+Args:
+  - String:          'unrolled loop by a factor of '
+  - UnrollCount:     '4'
+...
+--- !Analysis
+Pass:            size-info
+Name:            IRSizeChange
+Function:        _Z10heavy_calcRKSt6vectorIfSaIfEE
+Args:
+  - Pass:            Canonicalize natural loops
+  - String:          ': IR instruction count changed from '
+  - IRInstrsBefore:  '202'
+  - String:          ' to '
+  - IRInstrsAfter:   '203'
+  - String:          '; Delta: '
+  - DeltaInstrCount: '1'
+...
+--- !Analysis
+Pass:            size-info
+Name:            FunctionIRSizeChange
+Function:        _Z10heavy_calcRKSt6vectorIfSaIfEE
+Args:
+  - Pass:            Canonicalize natural loops
+  - String:          ': Function: '
+  - Function:        _Z10heavy_calcRKSt6vectorIfSaIfEE
+  - String:          ': IR instruction count changed from '
+  - IRInstrsBefore:  '57'
+  - String:          ' to '
+  - IRInstrsAfter:   '58'
+  - String:          '; Delta: '
+  - DeltaInstrCount: '1'
+...
+--- !Analysis
+Pass:            size-info
+Name:            IRSizeChange
+Function:        _Z10heavy_calcRKSt6vectorIfSaIfEE
+Args:
+  - Pass:            Loop Strength Reduction
+  - String:          ': IR instruction count changed from '
+  - IRInstrsBefore:  '203'
+  - String:          ' to '
+  - IRInstrsAfter:   '204'
+  - String:          '; Delta: '
+  - DeltaInstrCount: '1'
+...
+--- !Analysis
+Pass:            size-info
+Name:            FunctionIRSizeChange
+Function:        _Z10heavy_calcRKSt6vectorIfSaIfEE
+Args:
+  - Pass:            Loop Strength Reduction
+  - String:          ': Function: '
+  - Function:        _Z10heavy_calcRKSt6vectorIfSaIfEE
+  - String:          ': IR instruction count changed from '
+  - IRInstrsBefore:  '58'
+  - String:          ' to '
+  - IRInstrsAfter:   '59'
+  - String:          '; Delta: '
+  - DeltaInstrCount: '1'
+...
+--- !Analysis
+Pass:            size-info
+Name:            IRSizeChange
+Function:        _Z10heavy_calcRKSt6vectorIfSaIfEE
+Args:
+  - Pass:            Loop Strength Reduction
+  - String:          ': IR instruction count changed from '
+  - IRInstrsBefore:  '204'
+  - String:          ' to '
+  - IRInstrsAfter:   '208'
+  - String:          '; Delta: '
+  - DeltaInstrCount: '4'
+...
+--- !Analysis
+Pass:            size-info
+Name:            FunctionIRSizeChange
+Function:        _Z10heavy_calcRKSt6vectorIfSaIfEE
+Args:
+  - Pass:            Loop Strength Reduction
+  - String:          ': Function: '
+  - Function:        _Z10heavy_calcRKSt6vectorIfSaIfEE
+  - String:          ': IR instruction count changed from '
+  - IRInstrsBefore:  '59'
+  - String:          ' to '
+  - IRInstrsAfter:   '63'
+  - String:          '; Delta: '
+  - DeltaInstrCount: '4'
+...
+--- !Analysis
+Pass:            size-info
+Name:            IRSizeChange
+Function:        _Z10heavy_calcRKSt6vectorIfSaIfEE
+Args:
+  - Pass:            Expand reduction intrinsics
+  - String:          ': IR instruction count changed from '
+  - IRInstrsBefore:  '208'
+  - String:          ' to '
+  - IRInstrsAfter:   '212'
+  - String:          '; Delta: '
+  - DeltaInstrCount: '4'
+...
+--- !Analysis
+Pass:            size-info
+Name:            FunctionIRSizeChange
+Function:        _Z10heavy_calcRKSt6vectorIfSaIfEE
+Args:
+  - Pass:            Expand reduction intrinsics
+  - String:          ': Function: '
+  - Function:        _Z10heavy_calcRKSt6vectorIfSaIfEE
+  - String:          ': IR instruction count changed from '
+  - IRInstrsBefore:  '58'
+  - String:          ' to '
+  - IRInstrsAfter:   '67'
+  - String:          '; Delta: '
+  - DeltaInstrCount: '9'
+...
+--- !Analysis
+Pass:            size-info
+Name:            IRSizeChange
+Function:        _Z10heavy_calcRKSt6vectorIfSaIfEE
+Args:
+  - Pass:            CodeGen Prepare
+  - String:          ': IR instruction count changed from '
+  - IRInstrsBefore:  '212'
+  - String:          ' to '
+  - IRInstrsAfter:   '208'
+  - String:          '; Delta: '
+  - DeltaInstrCount: '-4'
+...
+--- !Analysis
+Pass:            size-info
+Name:            FunctionIRSizeChange
+Function:        _Z10heavy_calcRKSt6vectorIfSaIfEE
+Args:
+  - Pass:            CodeGen Prepare
+  - String:          ': Function: '
+  - Function:        _Z10heavy_calcRKSt6vectorIfSaIfEE
+  - String:          ': IR instruction count changed from '
+  - IRInstrsBefore:  '67'
+  - String:          ' to '
+  - IRInstrsAfter:   '63'
+  - String:          '; Delta: '
+  - DeltaInstrCount: '-4'
+...
+--- !Analysis
+Pass:            size-info
+Name:            FunctionMISizeChange
+DebugLoc:        { File: example2.cpp, Line: 13, Column: 0 }
+Function:        _Z10heavy_calcRKSt6vectorIfSaIfEE
+Args:
+  - Pass:            'X86 DAG->DAG Instruction Selection'
+  - String:          ': Function: '
+  - Function:        _Z10heavy_calcRKSt6vectorIfSaIfEE
+  - String:          ': '
+  - String:          'MI Instruction count changed from '
+  - MIInstrsBefore:  '0'
+  - String:          ' to '
+  - MIInstrsAfter:   '72'
+  - String:          '; Delta: '
+  - Delta:           '72'
+...
+--- !Analysis
+Pass:            size-info
+Name:            FunctionMISizeChange
+DebugLoc:        { File: example2.cpp, Line: 13, Column: 0 }
+Function:        _Z10heavy_calcRKSt6vectorIfSaIfEE
+Args:
+  - Pass:            Early Machine Loop Invariant Code Motion
+  - String:          ': Function: '
+  - Function:        _Z10heavy_calcRKSt6vectorIfSaIfEE
+  - String:          ': '
+  - String:          'MI Instruction count changed from '
+  - MIInstrsBefore:  '72'
+  - String:          ' to '
+  - MIInstrsAfter:   '74'
+  - String:          '; Delta: '
+  - Delta:           '2'
+...
+--- !Analysis
+Pass:            size-info
+Name:            FunctionMISizeChange
+DebugLoc:        { File: example2.cpp, Line: 13, Column: 0 }
+Function:        _Z10heavy_calcRKSt6vectorIfSaIfEE
+Args:
+  - Pass:            Machine Common Subexpression Elimination
+  - String:          ': Function: '
+  - Function:        _Z10heavy_calcRKSt6vectorIfSaIfEE
+  - String:          ': '
+  - String:          'MI Instruction count changed from '
+  - MIInstrsBefore:  '74'
+  - String:          ' to '
+  - MIInstrsAfter:   '73'
+  - String:          '; Delta: '
+  - Delta:           '-1'
+...
+--- !Analysis
+Pass:            size-info
+Name:            FunctionMISizeChange
+DebugLoc:        { File: example2.cpp, Line: 13, Column: 0 }
+Function:        _Z10heavy_calcRKSt6vectorIfSaIfEE
+Args:
+  - Pass:            Peephole Optimizations
+  - String:          ': Function: '
+  - Function:        _Z10heavy_calcRKSt6vectorIfSaIfEE
+  - String:          ': '
+  - String:          'MI Instruction count changed from '
+  - MIInstrsBefore:  '73'
+  - String:          ' to '
+  - MIInstrsAfter:   '72'
+  - String:          '; Delta: '
+  - Delta:           '-1'
+...
+--- !Analysis
+Pass:            size-info
+Name:            FunctionMISizeChange
+DebugLoc:        { File: example2.cpp, Line: 13, Column: 0 }
+Function:        _Z10heavy_calcRKSt6vectorIfSaIfEE
+Args:
+  - Pass:            Eliminate PHI nodes for register allocation
+  - String:          ': Function: '
+  - Function:        _Z10heavy_calcRKSt6vectorIfSaIfEE
+  - String:          ': '
+  - String:          'MI Instruction count changed from '
+  - MIInstrsBefore:  '72'
+  - String:          ' to '
+  - MIInstrsAfter:   '89'
+  - String:          '; Delta: '
+  - Delta:           '17'
+...
+--- !Analysis
+Pass:            size-info
+Name:            FunctionMISizeChange
+DebugLoc:        { File: example2.cpp, Line: 13, Column: 0 }
+Function:        _Z10heavy_calcRKSt6vectorIfSaIfEE
+Args:
+  - Pass:            Two-Address instruction pass
+  - String:          ': Function: '
+  - Function:        _Z10heavy_calcRKSt6vectorIfSaIfEE
+  - String:          ': '
+  - String:          'MI Instruction count changed from '
+  - MIInstrsBefore:  '89'
+  - String:          ' to '
+  - MIInstrsAfter:   '108'
+  - String:          '; Delta: '
+  - Delta:           '19'
+...
+--- !Analysis
+Pass:            size-info
+Name:            FunctionMISizeChange
+DebugLoc:        { File: example2.cpp, Line: 13, Column: 0 }
+Function:        _Z10heavy_calcRKSt6vectorIfSaIfEE
+Args:
+  - Pass:            Register Coalescer
+  - String:          ': Function: '
+  - Function:        _Z10heavy_calcRKSt6vectorIfSaIfEE
+  - String:          ': '
+  - String:          'MI Instruction count changed from '
+  - MIInstrsBefore:  '108'
+  - String:          ' to '
+  - MIInstrsAfter:   '65'
+  - String:          '; Delta: '
+  - Delta:           '-43'
+...
+--- !Missed
+Pass:            regalloc
+Name:            SpillReloadCopies
+DebugLoc:        { File: example2.cpp, Line: 13, Column: 1 }
+Function:        _Z10heavy_calcRKSt6vectorIfSaIfEE
+Args:
+  - NumVRCopies:     '1'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '6.250000e-01'
+  - String:          ' total copies cost '
+  - String:          generated in function
+...
+--- !Analysis
+Pass:            size-info
+Name:            FunctionMISizeChange
+DebugLoc:        { File: example2.cpp, Line: 13, Column: 0 }
+Function:        _Z10heavy_calcRKSt6vectorIfSaIfEE
+Args:
+  - Pass:            Virtual Register Rewriter
+  - String:          ': Function: '
+  - Function:        _Z10heavy_calcRKSt6vectorIfSaIfEE
+  - String:          ': '
+  - String:          'MI Instruction count changed from '
+  - MIInstrsBefore:  '65'
+  - String:          ' to '
+  - MIInstrsAfter:   '63'
+  - String:          '; Delta: '
+  - Delta:           '-2'
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: example2.cpp, Line: 13, Column: 0 }
+Function:        _Z10heavy_calcRKSt6vectorIfSaIfEE
+Args:
+  - NumStackBytes:   '0'
+  - String:          ' stack bytes in function '''
+  - Function:        _Z10heavy_calcRKSt6vectorIfSaIfEE
+  - String:          ''''
+...
+--- !Analysis
+Pass:            size-info
+Name:            FunctionMISizeChange
+DebugLoc:        { File: example2.cpp, Line: 13, Column: 0 }
+Function:        _Z10heavy_calcRKSt6vectorIfSaIfEE
+Args:
+  - Pass:            Control Flow Optimizer
+  - String:          ': Function: '
+  - Function:        _Z10heavy_calcRKSt6vectorIfSaIfEE
+  - String:          ': '
+  - String:          'MI Instruction count changed from '
+  - MIInstrsBefore:  '63'
+  - String:          ' to '
+  - MIInstrsAfter:   '59'
+  - String:          '; Delta: '
+  - Delta:           '-4'
+...
+--- !Analysis
+Pass:            stack-frame-layout
+Name:            StackLayout
+DebugLoc:        { File: example2.cpp, Line: 13, Column: 0 }
+Function:        _Z10heavy_calcRKSt6vectorIfSaIfEE
+Args:
+  - String:          "\nFunction: _Z10heavy_calcRKSt6vectorIfSaIfEE"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _Z10heavy_calcRKSt6vectorIfSaIfEE
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          MOV64rm
+  - String:          ': '
+  - INST_MOV64rm:    '2'
+  - String:          "\n"
+  - String:          JCC_1
+  - String:          ': '
+  - INST_JCC_1:      '1'
+  - String:          "\n"
+  - String:          SUB64rr
+  - String:          ': '
+  - INST_SUB64rr:    '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _Z10heavy_calcRKSt6vectorIfSaIfEE
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          CMP64ri32
+  - String:          ': '
+  - INST_CMP64ri32:  '2'
+  - String:          "\n"
+  - String:          ADC64ri32
+  - String:          ': '
+  - INST_ADC64ri32:  '1'
+  - String:          "\n"
+  - String:          JCC_1
+  - String:          ': '
+  - INST_JCC_1:      '1'
+  - String:          "\n"
+  - String:          MOV64rr
+  - String:          ': '
+  - INST_MOV64rr:    '1'
+  - String:          "\n"
+  - String:          SAR64ri
+  - String:          ': '
+  - INST_SAR64ri:    '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _Z10heavy_calcRKSt6vectorIfSaIfEE
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          XOR32rr
+  - String:          ': '
+  - INST_XOR32rr:    '2'
+  - String:          "\n"
+  - String:          JMP_1
+  - String:          ': '
+  - INST_JMP_1:      '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _Z10heavy_calcRKSt6vectorIfSaIfEE
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          RET64
+  - String:          ': '
+  - INST_RET64:      '1'
+  - String:          "\n"
+  - String:          XOR32rr
+  - String:          ': '
+  - INST_XOR32rr:    '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _Z10heavy_calcRKSt6vectorIfSaIfEE
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          MOVAPSrm
+  - String:          ': '
+  - INST_MOVAPSrm:   '2'
+  - String:          "\n"
+  - String:          PXORrr
+  - String:          ': '
+  - INST_PXORrr:     '2'
+  - String:          "\n"
+  - String:          AND64ri32
+  - String:          ': '
+  - INST_AND64ri32:  '1'
+  - String:          "\n"
+  - String:          AND64rr
+  - String:          ': '
+  - INST_AND64rr:    '1'
+  - String:          "\n"
+  - String:          LEA64r
+  - String:          ': '
+  - INST_LEA64r:     '1'
+  - String:          "\n"
+  - String:          MOV64ri
+  - String:          ': '
+  - INST_MOV64ri:    '1'
+  - String:          "\n"
+  - String:          XOR32rr
+  - String:          ': '
+  - INST_XOR32rr:    '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: example2.cpp, Line: 17, Column: 51 }
+Function:        _Z10heavy_calcRKSt6vectorIfSaIfEE
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ANDPSrr
+  - String:          ': '
+  - INST_ANDPSrr:    '2'
+  - String:          "\n"
+  - String:          CVTTPS2DQrr
+  - String:          ': '
+  - INST_CVTTPS2DQrr: '2'
+  - String:          "\n"
+  - String:          MOVUPSrm
+  - String:          ': '
+  - INST_MOVUPSrm:   '2'
+  - String:          "\n"
+  - String:          MULPSrr
+  - String:          ': '
+  - INST_MULPSrr:    '2'
+  - String:          "\n"
+  - String:          PADDDrr
+  - String:          ': '
+  - INST_PADDDrr:    '2'
+  - String:          "\n"
+  - String:          SQRTPSr
+  - String:          ': '
+  - INST_SQRTPSr:    '2'
+  - String:          "\n"
+  - String:          ADD64ri32
+  - String:          ': '
+  - INST_ADD64ri32:  '1'
+  - String:          "\n"
+  - String:          CMP64rr
+  - String:          ': '
+  - INST_CMP64rr:    '1'
+  - String:          "\n"
+  - String:          JCC_1
+  - String:          ': '
+  - INST_JCC_1:      '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: example2.cpp, Line: 15, Column: 5 }
+Function:        _Z10heavy_calcRKSt6vectorIfSaIfEE
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          PADDDrr
+  - String:          ': '
+  - INST_PADDDrr:    '3'
+  - String:          "\n"
+  - String:          PSHUFDri
+  - String:          ': '
+  - INST_PSHUFDri:   '2'
+  - String:          "\n"
+  - String:          CMP64rr
+  - String:          ': '
+  - INST_CMP64rr:    '1'
+  - String:          "\n"
+  - String:          JCC_1
+  - String:          ': '
+  - INST_JCC_1:      '1'
+  - String:          "\n"
+  - String:          MOVPDI2DIrr
+  - String:          ': '
+  - INST_MOVPDI2DIrr: '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _Z10heavy_calcRKSt6vectorIfSaIfEE
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          MOVAPSrm
+  - String:          ': '
+  - INST_MOVAPSrm:   '1'
+  - String:          "\n"
+  - String:          MOVSSrm_alt
+  - String:          ': '
+  - INST_MOVSSrm_alt: '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'G:/msys64/mingw64/include/c++/15.1.0/cmath', 
+                   Line: 246, Column: 12 }
+Function:        _Z10heavy_calcRKSt6vectorIfSaIfEE
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ADD32rr
+  - String:          ': '
+  - INST_ADD32rr:    '1'
+  - String:          "\n"
+  - String:          ANDPSrr
+  - String:          ': '
+  - INST_ANDPSrr:    '1'
+  - String:          "\n"
+  - String:          CMP64rr
+  - String:          ': '
+  - INST_CMP64rr:    '1'
+  - String:          "\n"
+  - String:          CVTTSS2SIrr
+  - String:          ': '
+  - INST_CVTTSS2SIrr: '1'
+  - String:          "\n"
+  - String:          INC64r
+  - String:          ': '
+  - INST_INC64r:     '1'
+  - String:          "\n"
+  - String:          JCC_1
+  - String:          ': '
+  - INST_JCC_1:      '1'
+  - String:          "\n"
+  - String:          MOVSSrm
+  - String:          ': '
+  - INST_MOVSSrm:    '1'
+  - String:          "\n"
+  - String:          MULSSrr
+  - String:          ': '
+  - INST_MULSSrr:    '1'
+  - String:          "\n"
+  - String:          SQRTSSr
+  - String:          ': '
+  - INST_SQRTSSr:    '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: example2.cpp, Line: 19, Column: 5 }
+Function:        _Z10heavy_calcRKSt6vectorIfSaIfEE
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          RET64
+  - String:          ': '
+  - INST_RET64:      '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: example2.cpp, Line: 13, Column: 0 }
+Function:        _Z10heavy_calcRKSt6vectorIfSaIfEE
+Args:
+  - NumInstructions: '59'
+  - String:          ' instructions in function'
+...
+--- !Analysis
+Pass:            size-info
+Name:            IRSizeChange
+Function:        _Z10sum_scaledPii
+Args:
+  - Pass:            Canonicalize natural loops
+  - String:          ': IR instruction count changed from '
+  - IRInstrsBefore:  '208'
+  - String:          ' to '
+  - IRInstrsAfter:   '209'
+  - String:          '; Delta: '
+  - DeltaInstrCount: '1'
+...
+--- !Analysis
+Pass:            size-info
+Name:            FunctionIRSizeChange
+Function:        _Z10sum_scaledPii
+Args:
+  - Pass:            Canonicalize natural loops
+  - String:          ': Function: '
+  - Function:        _Z10sum_scaledPii
+  - String:          ': IR instruction count changed from '
+  - IRInstrsBefore:  '50'
+  - String:          ' to '
+  - IRInstrsAfter:   '51'
+  - String:          '; Delta: '
+  - DeltaInstrCount: '1'
+...
+--- !Analysis
+Pass:            size-info
+Name:            IRSizeChange
+Function:        _Z10sum_scaledPii
+Args:
+  - Pass:            Loop Strength Reduction
+  - String:          ': IR instruction count changed from '
+  - IRInstrsBefore:  '209'
+  - String:          ' to '
+  - IRInstrsAfter:   '210'
+  - String:          '; Delta: '
+  - DeltaInstrCount: '1'
+...
+--- !Analysis
+Pass:            size-info
+Name:            FunctionIRSizeChange
+Function:        _Z10sum_scaledPii
+Args:
+  - Pass:            Loop Strength Reduction
+  - String:          ': Function: '
+  - Function:        _Z10sum_scaledPii
+  - String:          ': IR instruction count changed from '
+  - IRInstrsBefore:  '51'
+  - String:          ' to '
+  - IRInstrsAfter:   '52'
+  - String:          '; Delta: '
+  - DeltaInstrCount: '1'
+...
+--- !Analysis
+Pass:            size-info
+Name:            IRSizeChange
+Function:        _Z10sum_scaledPii
+Args:
+  - Pass:            Loop Strength Reduction
+  - String:          ': IR instruction count changed from '
+  - IRInstrsBefore:  '210'
+  - String:          ' to '
+  - IRInstrsAfter:   '216'
+  - String:          '; Delta: '
+  - DeltaInstrCount: '6'
+...
+--- !Analysis
+Pass:            size-info
+Name:            FunctionIRSizeChange
+Function:        _Z10sum_scaledPii
+Args:
+  - Pass:            Loop Strength Reduction
+  - String:          ': Function: '
+  - Function:        _Z10sum_scaledPii
+  - String:          ': IR instruction count changed from '
+  - IRInstrsBefore:  '52'
+  - String:          ' to '
+  - IRInstrsAfter:   '58'
+  - String:          '; Delta: '
+  - DeltaInstrCount: '6'
+...
+--- !Analysis
+Pass:            size-info
+Name:            IRSizeChange
+Function:        _Z10sum_scaledPii
+Args:
+  - Pass:            Expand reduction intrinsics
+  - String:          ': IR instruction count changed from '
+  - IRInstrsBefore:  '216'
+  - String:          ' to '
+  - IRInstrsAfter:   '220'
+  - String:          '; Delta: '
+  - DeltaInstrCount: '4'
+...
+--- !Analysis
+Pass:            size-info
+Name:            FunctionIRSizeChange
+Function:        _Z10sum_scaledPii
+Args:
+  - Pass:            Expand reduction intrinsics
+  - String:          ': Function: '
+  - Function:        _Z10sum_scaledPii
+  - String:          ': IR instruction count changed from '
+  - IRInstrsBefore:  '51'
+  - String:          ' to '
+  - IRInstrsAfter:   '62'
+  - String:          '; Delta: '
+  - DeltaInstrCount: '11'
+...
+--- !Analysis
+Pass:            size-info
+Name:            IRSizeChange
+Function:        _Z10sum_scaledPii
+Args:
+  - Pass:            CodeGen Prepare
+  - String:          ': IR instruction count changed from '
+  - IRInstrsBefore:  '220'
+  - String:          ' to '
+  - IRInstrsAfter:   '218'
+  - String:          '; Delta: '
+  - DeltaInstrCount: '-2'
+...
+--- !Analysis
+Pass:            size-info
+Name:            FunctionIRSizeChange
+Function:        _Z10sum_scaledPii
+Args:
+  - Pass:            CodeGen Prepare
+  - String:          ': Function: '
+  - Function:        _Z10sum_scaledPii
+  - String:          ': IR instruction count changed from '
+  - IRInstrsBefore:  '62'
+  - String:          ' to '
+  - IRInstrsAfter:   '60'
+  - String:          '; Delta: '
+  - DeltaInstrCount: '-2'
+...
+--- !Analysis
+Pass:            size-info
+Name:            FunctionMISizeChange
+DebugLoc:        { File: example2.cpp, Line: 23, Column: 0 }
+Function:        _Z10sum_scaledPii
+Args:
+  - Pass:            'X86 DAG->DAG Instruction Selection'
+  - String:          ': Function: '
+  - Function:        _Z10sum_scaledPii
+  - String:          ': '
+  - String:          'MI Instruction count changed from '
+  - MIInstrsBefore:  '0'
+  - String:          ' to '
+  - MIInstrsAfter:   '93'
+  - String:          '; Delta: '
+  - Delta:           '93'
+...
+--- !Analysis
+Pass:            size-info
+Name:            FunctionMISizeChange
+DebugLoc:        { File: example2.cpp, Line: 23, Column: 0 }
+Function:        _Z10sum_scaledPii
+Args:
+  - Pass:            Early Machine Loop Invariant Code Motion
+  - String:          ': Function: '
+  - Function:        _Z10sum_scaledPii
+  - String:          ': '
+  - String:          'MI Instruction count changed from '
+  - MIInstrsBefore:  '93'
+  - String:          ' to '
+  - MIInstrsAfter:   '92'
+  - String:          '; Delta: '
+  - Delta:           '-1'
+...
+--- !Analysis
+Pass:            size-info
+Name:            FunctionMISizeChange
+DebugLoc:        { File: example2.cpp, Line: 23, Column: 0 }
+Function:        _Z10sum_scaledPii
+Args:
+  - Pass:            Machine Common Subexpression Elimination
+  - String:          ': Function: '
+  - Function:        _Z10sum_scaledPii
+  - String:          ': '
+  - String:          'MI Instruction count changed from '
+  - MIInstrsBefore:  '92'
+  - String:          ' to '
+  - MIInstrsAfter:   '91'
+  - String:          '; Delta: '
+  - Delta:           '-1'
+...
+--- !Analysis
+Pass:            size-info
+Name:            FunctionMISizeChange
+DebugLoc:        { File: example2.cpp, Line: 23, Column: 0 }
+Function:        _Z10sum_scaledPii
+Args:
+  - Pass:            Eliminate PHI nodes for register allocation
+  - String:          ': Function: '
+  - Function:        _Z10sum_scaledPii
+  - String:          ': '
+  - String:          'MI Instruction count changed from '
+  - MIInstrsBefore:  '91'
+  - String:          ' to '
+  - MIInstrsAfter:   '112'
+  - String:          '; Delta: '
+  - Delta:           '21'
+...
+--- !Analysis
+Pass:            size-info
+Name:            FunctionMISizeChange
+DebugLoc:        { File: example2.cpp, Line: 23, Column: 0 }
+Function:        _Z10sum_scaledPii
+Args:
+  - Pass:            Two-Address instruction pass
+  - String:          ': Function: '
+  - Function:        _Z10sum_scaledPii
+  - String:          ': '
+  - String:          'MI Instruction count changed from '
+  - MIInstrsBefore:  '112'
+  - String:          ' to '
+  - MIInstrsAfter:   '140'
+  - String:          '; Delta: '
+  - Delta:           '28'
+...
+--- !Analysis
+Pass:            size-info
+Name:            FunctionMISizeChange
+DebugLoc:        { File: example2.cpp, Line: 23, Column: 0 }
+Function:        _Z10sum_scaledPii
+Args:
+  - Pass:            Register Coalescer
+  - String:          ': Function: '
+  - Function:        _Z10sum_scaledPii
+  - String:          ': '
+  - String:          'MI Instruction count changed from '
+  - MIInstrsBefore:  '140'
+  - String:          ' to '
+  - MIInstrsAfter:   '81'
+  - String:          '; Delta: '
+  - Delta:           '-59'
+...
+--- !Missed
+Pass:            regalloc
+Name:            LoopSpillReloadCopies
+DebugLoc:        { File: example2.cpp, Line: 26, Column: 5 }
+Function:        _Z10sum_scaledPii
+Args:
+  - NumVRCopies:     '1'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '1.500000e+01'
+  - String:          ' total copies cost '
+  - String:          generated in loop
+...
+--- !Missed
+Pass:            regalloc
+Name:            LoopSpillReloadCopies
+DebugLoc:        { File: example2.cpp, Line: 26, Column: 5 }
+Function:        _Z10sum_scaledPii
+Args:
+  - NumVRCopies:     '3'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '3.000000e+01'
+  - String:          ' total copies cost '
+  - String:          generated in loop
+...
+--- !Missed
+Pass:            regalloc
+Name:            SpillReloadCopies
+DebugLoc:        { File: example2.cpp, Line: 23, Column: 1 }
+Function:        _Z10sum_scaledPii
+Args:
+  - NumVRCopies:     '6'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '4.562500e+01'
+  - String:          ' total copies cost '
+  - String:          generated in function
+...
+--- !Analysis
+Pass:            size-info
+Name:            FunctionMISizeChange
+DebugLoc:        { File: example2.cpp, Line: 23, Column: 0 }
+Function:        _Z10sum_scaledPii
+Args:
+  - Pass:            Virtual Register Rewriter
+  - String:          ': Function: '
+  - Function:        _Z10sum_scaledPii
+  - String:          ': '
+  - String:          'MI Instruction count changed from '
+  - MIInstrsBefore:  '81'
+  - String:          ' to '
+  - MIInstrsAfter:   '79'
+  - String:          '; Delta: '
+  - Delta:           '-2'
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: example2.cpp, Line: 23, Column: 0 }
+Function:        _Z10sum_scaledPii
+Args:
+  - NumStackBytes:   '120'
+  - String:          ' stack bytes in function '''
+  - Function:        _Z10sum_scaledPii
+  - String:          ''''
+...
+--- !Analysis
+Pass:            size-info
+Name:            FunctionMISizeChange
+DebugLoc:        { File: example2.cpp, Line: 23, Column: 0 }
+Function:        _Z10sum_scaledPii
+Args:
+  - Pass:            'Prologue/Epilogue Insertion & Frame Finalization'
+  - String:          ': Function: '
+  - Function:        _Z10sum_scaledPii
+  - String:          ': '
+  - String:          'MI Instruction count changed from '
+  - MIInstrsBefore:  '79'
+  - String:          ' to '
+  - MIInstrsAfter:   '105'
+  - String:          '; Delta: '
+  - Delta:           '26'
+...
+--- !Analysis
+Pass:            size-info
+Name:            FunctionMISizeChange
+DebugLoc:        { File: example2.cpp, Line: 23, Column: 0 }
+Function:        _Z10sum_scaledPii
+Args:
+  - Pass:            Control Flow Optimizer
+  - String:          ': Function: '
+  - Function:        _Z10sum_scaledPii
+  - String:          ': '
+  - String:          'MI Instruction count changed from '
+  - MIInstrsBefore:  '105'
+  - String:          ' to '
+  - MIInstrsAfter:   '101'
+  - String:          '; Delta: '
+  - Delta:           '-4'
+...
+--- !Analysis
+Pass:            stack-frame-layout
+Name:            StackLayout
+DebugLoc:        { File: example2.cpp, Line: 23, Column: 0 }
+Function:        _Z10sum_scaledPii
+Args:
+  - String:          "\nFunction: _Z10sum_scaledPii"
+  - String:          "\nOffset: [SP"
+  - Offset:          '-24'
+  - String:          '], Type: '
+  - Type:            Spill
+  - String:          ', Align: '
+  - Align:           '16'
+  - String:          ', Size: '
+  - Size:            '16'
+  - String:          "\nOffset: [SP"
+  - Offset:          '-40'
+  - String:          '], Type: '
+  - Type:            Spill
+  - String:          ', Align: '
+  - Align:           '16'
+  - String:          ', Size: '
+  - Size:            '16'
+  - String:          "\nOffset: [SP"
+  - Offset:          '-56'
+  - String:          '], Type: '
+  - Type:            Spill
+  - String:          ', Align: '
+  - Align:           '16'
+  - String:          ', Size: '
+  - Size:            '16'
+  - String:          "\nOffset: [SP"
+  - Offset:          '-72'
+  - String:          '], Type: '
+  - Type:            Spill
+  - String:          ', Align: '
+  - Align:           '16'
+  - String:          ', Size: '
+  - Size:            '16'
+  - String:          "\nOffset: [SP"
+  - Offset:          '-88'
+  - String:          '], Type: '
+  - Type:            Spill
+  - String:          ', Align: '
+  - Align:           '16'
+  - String:          ', Size: '
+  - Size:            '16'
+  - String:          "\nOffset: [SP"
+  - Offset:          '-104'
+  - String:          '], Type: '
+  - Type:            Spill
+  - String:          ', Align: '
+  - Align:           '16'
+  - String:          ', Size: '
+  - Size:            '16'
+  - String:          "\nOffset: [SP"
+  - Offset:          '-120'
+  - String:          '], Type: '
+  - Type:            Spill
+  - String:          ', Align: '
+  - Align:           '16'
+  - String:          ', Size: '
+  - Size:            '16'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _Z10sum_scaledPii
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          MOVDQAmr
+  - String:          ': '
+  - INST_MOVDQAmr:   '7'
+  - String:          "\n"
+  - String:          JCC_1
+  - String:          ': '
+  - INST_JCC_1:      '1'
+  - String:          "\n"
+  - String:          SUB64ri32
+  - String:          ': '
+  - INST_SUB64ri32:  '1'
+  - String:          "\n"
+  - String:          TEST32rr
+  - String:          ': '
+  - INST_TEST32rr:   '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: example2.cpp, Line: 26, Column: 23 }
+Function:        _Z10sum_scaledPii
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          CMP32ri
+  - String:          ': '
+  - INST_CMP32ri:    '1'
+  - String:          "\n"
+  - String:          JCC_1
+  - String:          ': '
+  - INST_JCC_1:      '1'
+  - String:          "\n"
+  - String:          MOV32rr
+  - String:          ': '
+  - INST_MOV32rr:    '1'
+  - String:          "\n"
+  - String:          XOR32rr
+  - String:          ': '
+  - INST_XOR32rr:    '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _Z10sum_scaledPii
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          JMP_1
+  - String:          ': '
+  - INST_JMP_1:      '1'
+  - String:          "\n"
+  - String:          XOR32rr
+  - String:          ': '
+  - INST_XOR32rr:    '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _Z10sum_scaledPii
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          JMP_1
+  - String:          ': '
+  - INST_JMP_1:      '1'
+  - String:          "\n"
+  - String:          XOR32rr
+  - String:          ': '
+  - INST_XOR32rr:    '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: example2.cpp, Line: 26, Column: 5 }
+Function:        _Z10sum_scaledPii
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          MOVDQArm
+  - String:          ': '
+  - INST_MOVDQArm:   '5'
+  - String:          "\n"
+  - String:          PXORrr
+  - String:          ': '
+  - INST_PXORrr:     '3'
+  - String:          "\n"
+  - String:          AND32ri
+  - String:          ': '
+  - INST_AND32ri:    '2'
+  - String:          "\n"
+  - String:          MOV32rr
+  - String:          ': '
+  - INST_MOV32rr:    '2'
+  - String:          "\n"
+  - String:          SHL64ri
+  - String:          ': '
+  - INST_SHL64ri:    '1'
+  - String:          "\n"
+  - String:          SHR32ri
+  - String:          ': '
+  - INST_SHR32ri:    '1'
+  - String:          "\n"
+  - String:          XOR32rr
+  - String:          ': '
+  - INST_XOR32rr:    '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: example2.cpp, Line: 27, Column: 16 }
+Function:        _Z10sum_scaledPii
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          PSHUFDri
+  - String:          ': '
+  - INST_PSHUFDri:   '7'
+  - String:          "\n"
+  - String:          PMULUDQrr
+  - String:          ': '
+  - INST_PMULUDQrr:  '4'
+  - String:          "\n"
+  - String:          MOVDQArr
+  - String:          ': '
+  - INST_MOVDQArr:   '3'
+  - String:          "\n"
+  - String:          MOVDQUrm
+  - String:          ': '
+  - INST_MOVDQUrm:   '2'
+  - String:          "\n"
+  - String:          PADDDrr
+  - String:          ': '
+  - INST_PADDDrr:    '2'
+  - String:          "\n"
+  - String:          PADDQrr
+  - String:          ': '
+  - INST_PADDQrr:    '2'
+  - String:          "\n"
+  - String:          PANDrr
+  - String:          ': '
+  - INST_PANDrr:     '2'
+  - String:          "\n"
+  - String:          PUNPCKLDQrr
+  - String:          ': '
+  - INST_PUNPCKLDQrr: '2'
+  - String:          "\n"
+  - String:          ADD64ri32
+  - String:          ': '
+  - INST_ADD64ri32:  '1'
+  - String:          "\n"
+  - String:          CMP64rr
+  - String:          ': '
+  - INST_CMP64rr:    '1'
+  - String:          "\n"
+  - String:          JCC_1
+  - String:          ': '
+  - INST_JCC_1:      '1'
+  - String:          "\n"
+  - String:          PACKUSWBrr
+  - String:          ': '
+  - INST_PACKUSWBrr: '1'
+  - String:          "\n"
+  - String:          PCMPEQDrr
+  - String:          ': '
+  - INST_PCMPEQDrr:  '1'
+  - String:          "\n"
+  - String:          PSUBDrr
+  - String:          ': '
+  - INST_PSUBDrr:    '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: example2.cpp, Line: 26, Column: 5 }
+Function:        _Z10sum_scaledPii
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          PADDDrr
+  - String:          ': '
+  - INST_PADDDrr:    '3'
+  - String:          "\n"
+  - String:          PSHUFDri
+  - String:          ': '
+  - INST_PSHUFDri:   '2'
+  - String:          "\n"
+  - String:          CMP32rr
+  - String:          ': '
+  - INST_CMP32rr:    '1'
+  - String:          "\n"
+  - String:          JCC_1
+  - String:          ': '
+  - INST_JCC_1:      '1'
+  - String:          "\n"
+  - String:          MOVPDI2DIrr
+  - String:          ': '
+  - INST_MOVPDI2DIrr: '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: example2.cpp, Line: 27, Column: 24 }
+Function:        _Z10sum_scaledPii
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ADC32ri
+  - String:          ': '
+  - INST_ADC32ri:    '1'
+  - String:          "\n"
+  - String:          ADD32rr
+  - String:          ': '
+  - INST_ADD32rr:    '1'
+  - String:          "\n"
+  - String:          AND32ri
+  - String:          ': '
+  - INST_AND32ri:    '1'
+  - String:          "\n"
+  - String:          CMP64ri32
+  - String:          ': '
+  - INST_CMP64ri32:  '1'
+  - String:          "\n"
+  - String:          CMP64rr
+  - String:          ': '
+  - INST_CMP64rr:    '1'
+  - String:          "\n"
+  - String:          IMUL32rm
+  - String:          ': '
+  - INST_IMUL32rm:   '1'
+  - String:          "\n"
+  - String:          INC64r
+  - String:          ': '
+  - INST_INC64r:     '1'
+  - String:          "\n"
+  - String:          JCC_1
+  - String:          ': '
+  - INST_JCC_1:      '1'
+  - String:          "\n"
+  - String:          MOV32ri
+  - String:          ': '
+  - INST_MOV32ri:    '1'
+  - String:          "\n"
+  - String:          MOV32rr
+  - String:          ': '
+  - INST_MOV32rr:    '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: example2.cpp, Line: 29, Column: 5 }
+Function:        _Z10sum_scaledPii
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          MOVAPSrm
+  - String:          ': '
+  - INST_MOVAPSrm:   '7'
+  - String:          "\n"
+  - String:          ADD64ri32
+  - String:          ': '
+  - INST_ADD64ri32:  '1'
+  - String:          "\n"
+  - String:          RET64
+  - String:          ': '
+  - INST_RET64:      '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: example2.cpp, Line: 23, Column: 0 }
+Function:        _Z10sum_scaledPii
+Args:
+  - NumInstructions: '90'
+  - String:          ' instructions in function'
+...
+--- !Analysis
+Pass:            size-info
+Name:            IRSizeChange
+Function:        main
+Args:
+  - Pass:            Loop Strength Reduction
+  - String:          ': IR instruction count changed from '
+  - IRInstrsBefore:  '218'
+  - String:          ' to '
+  - IRInstrsAfter:   '221'
+  - String:          '; Delta: '
+  - DeltaInstrCount: '3'
+...
+--- !Analysis
+Pass:            size-info
+Name:            FunctionIRSizeChange
+Function:        main
+Args:
+  - Pass:            Loop Strength Reduction
+  - String:          ': Function: '
+  - Function:        main
+  - String:          ': IR instruction count changed from '
+  - IRInstrsBefore:  '95'
+  - String:          ' to '
+  - IRInstrsAfter:   '98'
+  - String:          '; Delta: '
+  - DeltaInstrCount: '3'
+...
+--- !Analysis
+Pass:            size-info
+Name:            IRSizeChange
+Function:        main
+Args:
+  - Pass:            Loop Strength Reduction
+  - String:          ': IR instruction count changed from '
+  - IRInstrsBefore:  '221'
+  - String:          ' to '
+  - IRInstrsAfter:   '233'
+  - String:          '; Delta: '
+  - DeltaInstrCount: '12'
+...
+--- !Analysis
+Pass:            size-info
+Name:            FunctionIRSizeChange
+Function:        main
+Args:
+  - Pass:            Loop Strength Reduction
+  - String:          ': Function: '
+  - Function:        main
+  - String:          ': IR instruction count changed from '
+  - IRInstrsBefore:  '98'
+  - String:          ' to '
+  - IRInstrsAfter:   '110'
+  - String:          '; Delta: '
+  - DeltaInstrCount: '12'
+...
+--- !Analysis
+Pass:            size-info
+Name:            IRSizeChange
+Function:        main
+Args:
+  - Pass:            Loop Strength Reduction
+  - String:          ': IR instruction count changed from '
+  - IRInstrsBefore:  '233'
+  - String:          ' to '
+  - IRInstrsAfter:   '236'
+  - String:          '; Delta: '
+  - DeltaInstrCount: '3'
+...
+--- !Analysis
+Pass:            size-info
+Name:            FunctionIRSizeChange
+Function:        main
+Args:
+  - Pass:            Loop Strength Reduction
+  - String:          ': Function: '
+  - Function:        main
+  - String:          ': IR instruction count changed from '
+  - IRInstrsBefore:  '110'
+  - String:          ' to '
+  - IRInstrsAfter:   '113'
+  - String:          '; Delta: '
+  - DeltaInstrCount: '3'
+...
+--- !Analysis
+Pass:            size-info
+Name:            IRSizeChange
+Function:        main
+Args:
+  - Pass:            Expand reduction intrinsics
+  - String:          ': IR instruction count changed from '
+  - IRInstrsBefore:  '236'
+  - String:          ' to '
+  - IRInstrsAfter:   '240'
+  - String:          '; Delta: '
+  - DeltaInstrCount: '4'
+...
+--- !Analysis
+Pass:            size-info
+Name:            FunctionIRSizeChange
+Function:        main
+Args:
+  - Pass:            Expand reduction intrinsics
+  - String:          ': Function: '
+  - Function:        main
+  - String:          ': IR instruction count changed from '
+  - IRInstrsBefore:  '95'
+  - String:          ' to '
+  - IRInstrsAfter:   '117'
+  - String:          '; Delta: '
+  - DeltaInstrCount: '22'
+...
+--- !Analysis
+Pass:            size-info
+Name:            FunctionMISizeChange
+DebugLoc:        { File: example2.cpp, Line: 32, Column: 0 }
+Function:        main
+Args:
+  - Pass:            'X86 DAG->DAG Instruction Selection'
+  - String:          ': Function: '
+  - Function:        main
+  - String:          ': '
+  - String:          'MI Instruction count changed from '
+  - MIInstrsBefore:  '0'
+  - String:          ' to '
+  - MIInstrsAfter:   '154'
+  - String:          '; Delta: '
+  - Delta:           '154'
+...
+--- !Analysis
+Pass:            size-info
+Name:            FunctionMISizeChange
+DebugLoc:        { File: example2.cpp, Line: 32, Column: 0 }
+Function:        main
+Args:
+  - Pass:            Merge disjoint stack slots
+  - String:          ': Function: '
+  - Function:        main
+  - String:          ': '
+  - String:          'MI Instruction count changed from '
+  - MIInstrsBefore:  '154'
+  - String:          ' to '
+  - MIInstrsAfter:   '150'
+  - String:          '; Delta: '
+  - Delta:           '-4'
+...
+--- !Analysis
+Pass:            size-info
+Name:            FunctionMISizeChange
+DebugLoc:        { File: example2.cpp, Line: 32, Column: 0 }
+Function:        main
+Args:
+  - Pass:            Remove dead machine instructions
+  - String:          ': Function: '
+  - Function:        main
+  - String:          ': '
+  - String:          'MI Instruction count changed from '
+  - MIInstrsBefore:  '150'
+  - String:          ' to '
+  - MIInstrsAfter:   '149'
+  - String:          '; Delta: '
+  - Delta:           '-1'
+...
+--- !Analysis
+Pass:            size-info
+Name:            FunctionMISizeChange
+DebugLoc:        { File: example2.cpp, Line: 32, Column: 0 }
+Function:        main
+Args:
+  - Pass:            Early Machine Loop Invariant Code Motion
+  - String:          ': Function: '
+  - Function:        main
+  - String:          ': '
+  - String:          'MI Instruction count changed from '
+  - MIInstrsBefore:  '149'
+  - String:          ' to '
+  - MIInstrsAfter:   '158'
+  - String:          '; Delta: '
+  - Delta:           '9'
+...
+--- !Analysis
+Pass:            size-info
+Name:            FunctionMISizeChange
+DebugLoc:        { File: example2.cpp, Line: 32, Column: 0 }
+Function:        main
+Args:
+  - Pass:            Machine Common Subexpression Elimination
+  - String:          ': Function: '
+  - Function:        main
+  - String:          ': '
+  - String:          'MI Instruction count changed from '
+  - MIInstrsBefore:  '158'
+  - String:          ' to '
+  - MIInstrsAfter:   '157'
+  - String:          '; Delta: '
+  - Delta:           '-1'
+...
+--- !Analysis
+Pass:            size-info
+Name:            FunctionMISizeChange
+DebugLoc:        { File: example2.cpp, Line: 32, Column: 0 }
+Function:        main
+Args:
+  - Pass:            Peephole Optimizations
+  - String:          ': Function: '
+  - Function:        main
+  - String:          ': '
+  - String:          'MI Instruction count changed from '
+  - MIInstrsBefore:  '157'
+  - String:          ' to '
+  - MIInstrsAfter:   '156'
+  - String:          '; Delta: '
+  - Delta:           '-1'
+...
+--- !Analysis
+Pass:            size-info
+Name:            FunctionMISizeChange
+DebugLoc:        { File: example2.cpp, Line: 32, Column: 0 }
+Function:        main
+Args:
+  - Pass:            Process Implicit Definitions
+  - String:          ': Function: '
+  - Function:        main
+  - String:          ': '
+  - String:          'MI Instruction count changed from '
+  - MIInstrsBefore:  '156'
+  - String:          ' to '
+  - MIInstrsAfter:   '154'
+  - String:          '; Delta: '
+  - Delta:           '-2'
+...
+--- !Analysis
+Pass:            size-info
+Name:            FunctionMISizeChange
+DebugLoc:        { File: example2.cpp, Line: 32, Column: 0 }
+Function:        main
+Args:
+  - Pass:            Eliminate PHI nodes for register allocation
+  - String:          ': Function: '
+  - Function:        main
+  - String:          ': '
+  - String:          'MI Instruction count changed from '
+  - MIInstrsBefore:  '154'
+  - String:          ' to '
+  - MIInstrsAfter:   '172'
+  - String:          '; Delta: '
+  - Delta:           '18'
+...
+--- !Analysis
+Pass:            size-info
+Name:            FunctionMISizeChange
+DebugLoc:        { File: example2.cpp, Line: 32, Column: 0 }
+Function:        main
+Args:
+  - Pass:            Two-Address instruction pass
+  - String:          ': Function: '
+  - Function:        main
+  - String:          ': '
+  - String:          'MI Instruction count changed from '
+  - MIInstrsBefore:  '172'
+  - String:          ' to '
+  - MIInstrsAfter:   '223'
+  - String:          '; Delta: '
+  - Delta:           '51'
+...
+--- !Analysis
+Pass:            size-info
+Name:            FunctionMISizeChange
+DebugLoc:        { File: example2.cpp, Line: 32, Column: 0 }
+Function:        main
+Args:
+  - Pass:            Register Coalescer
+  - String:          ': Function: '
+  - Function:        main
+  - String:          ': '
+  - String:          'MI Instruction count changed from '
+  - MIInstrsBefore:  '223'
+  - String:          ' to '
+  - MIInstrsAfter:   '159'
+  - String:          '; Delta: '
+  - Delta:           '-64'
+...
+--- !Missed
+Pass:            regalloc
+Name:            LoopSpillReloadCopies
+DebugLoc:        { File: example2.cpp, Line: 26, Column: 5 }
+Function:        main
+Args:
+  - NumVRCopies:     '4'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '1.280000e+02'
+  - String:          ' total copies cost '
+  - String:          generated in loop
+...
+--- !Missed
+Pass:            regalloc
+Name:            LoopSpillReloadCopies
+DebugLoc:        { File: example2.cpp, Line: 37, Column: 5 }
+Function:        main
+Args:
+  - NumVRCopies:     '7'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '2.240000e+02'
+  - String:          ' total copies cost '
+  - String:          generated in loop
+...
+--- !Missed
+Pass:            regalloc
+Name:            LoopSpillReloadCopies
+DebugLoc:        { File: example2.cpp, Line: 34, Column: 5 }
+Function:        main
+Args:
+  - NumVRCopies:     '7'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '2.240000e+02'
+  - String:          ' total copies cost '
+  - String:          generated in loop
+...
+--- !Missed
+Pass:            regalloc
+Name:            SpillReloadCopies
+DebugLoc:        { File: example2.cpp, Line: 32, Column: 1 }
+Function:        main
+Args:
+  - NumVRCopies:     '22'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '5.800000e+02'
+  - String:          ' total copies cost '
+  - String:          generated in function
+...
+--- !Analysis
+Pass:            size-info
+Name:            FunctionMISizeChange
+DebugLoc:        { File: example2.cpp, Line: 32, Column: 0 }
+Function:        main
+Args:
+  - Pass:            Virtual Register Rewriter
+  - String:          ': Function: '
+  - Function:        main
+  - String:          ': '
+  - String:          'MI Instruction count changed from '
+  - MIInstrsBefore:  '159'
+  - String:          ' to '
+  - MIInstrsAfter:   '158'
+  - String:          '; Delta: '
+  - Delta:           '-1'
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: example2.cpp, Line: 32, Column: 0 }
+Function:        main
+Args:
+  - NumStackBytes:   '4296'
+  - String:          ' stack bytes in function '''
+  - Function:        main
+  - String:          ''''
+...
+--- !Analysis
+Pass:            size-info
+Name:            FunctionMISizeChange
+DebugLoc:        { File: example2.cpp, Line: 32, Column: 0 }
+Function:        main
+Args:
+  - Pass:            'Prologue/Epilogue Insertion & Frame Finalization'
+  - String:          ': Function: '
+  - Function:        main
+  - String:          ': '
+  - String:          'MI Instruction count changed from '
+  - MIInstrsBefore:  '158'
+  - String:          ' to '
+  - MIInstrsAfter:   '187'
+  - String:          '; Delta: '
+  - Delta:           '29'
+...
+--- !Analysis
+Pass:            size-info
+Name:            FunctionMISizeChange
+DebugLoc:        { File: example2.cpp, Line: 32, Column: 0 }
+Function:        main
+Args:
+  - Pass:            Control Flow Optimizer
+  - String:          ': Function: '
+  - Function:        main
+  - String:          ': '
+  - String:          'MI Instruction count changed from '
+  - MIInstrsBefore:  '187'
+  - String:          ' to '
+  - MIInstrsAfter:   '184'
+  - String:          '; Delta: '
+  - Delta:           '-3'
+...
+--- !Analysis
+Pass:            size-info
+Name:            FunctionMISizeChange
+DebugLoc:        { File: example2.cpp, Line: 32, Column: 0 }
+Function:        main
+Args:
+  - Pass:            X86 LEA Fixup
+  - String:          ': Function: '
+  - Function:        main
+  - String:          ': '
+  - String:          'MI Instruction count changed from '
+  - MIInstrsBefore:  '184'
+  - String:          ' to '
+  - MIInstrsAfter:   '185'
+  - String:          '; Delta: '
+  - Delta:           '1'
+...
+--- !Analysis
+Pass:            stack-frame-layout
+Name:            StackLayout
+DebugLoc:        { File: example2.cpp, Line: 32, Column: 0 }
+Function:        main
+Args:
+  - String:          "\nFunction: main"
+  - String:          "\nOffset: [SP"
+  - Offset:          '-8'
+  - String:          '], Type: '
+  - Type:            Spill
+  - String:          ', Align: '
+  - Align:           '16'
+  - String:          ', Size: '
+  - Size:            '8'
+  - String:          "\nOffset: [SP"
+  - Offset:          '-16'
+  - String:          '], Type: '
+  - Type:            Spill
+  - String:          ', Align: '
+  - Align:           '8'
+  - String:          ', Size: '
+  - Size:            '8'
+  - String:          "\nOffset: [SP"
+  - Offset:          '-24'
+  - String:          '], Type: '
+  - Type:            Spill
+  - String:          ', Align: '
+  - Align:           '16'
+  - String:          ', Size: '
+  - Size:            '8'
+  - String:          "\nOffset: [SP"
+  - Offset:          '-40'
+  - String:          '], Type: '
+  - Type:            Spill
+  - String:          ', Align: '
+  - Align:           '16'
+  - String:          ', Size: '
+  - Size:            '16'
+  - String:          "\nOffset: [SP"
+  - Offset:          '-56'
+  - String:          '], Type: '
+  - Type:            Spill
+  - String:          ', Align: '
+  - Align:           '16'
+  - String:          ', Size: '
+  - Size:            '16'
+  - String:          "\nOffset: [SP"
+  - Offset:          '-72'
+  - String:          '], Type: '
+  - Type:            Spill
+  - String:          ', Align: '
+  - Align:           '16'
+  - String:          ', Size: '
+  - Size:            '16'
+  - String:          "\nOffset: [SP"
+  - Offset:          '-88'
+  - String:          '], Type: '
+  - Type:            Spill
+  - String:          ', Align: '
+  - Align:           '16'
+  - String:          ', Size: '
+  - Size:            '16'
+  - String:          "\nOffset: [SP"
+  - Offset:          '-104'
+  - String:          '], Type: '
+  - Type:            Spill
+  - String:          ', Align: '
+  - Align:           '16'
+  - String:          ', Size: '
+  - Size:            '16'
+  - String:          "\nOffset: [SP"
+  - Offset:          '-120'
+  - String:          '], Type: '
+  - Type:            Spill
+  - String:          ', Align: '
+  - Align:           '16'
+  - String:          ', Size: '
+  - Size:            '16'
+  - String:          "\nOffset: [SP"
+  - Offset:          '-136'
+  - String:          '], Type: '
+  - Type:            Spill
+  - String:          ', Align: '
+  - Align:           '16'
+  - String:          ', Size: '
+  - Size:            '16'
+  - String:          "\nOffset: [SP"
+  - Offset:          '-160'
+  - String:          '], Type: '
+  - Type:            Variable
+  - String:          ', Align: '
+  - Align:           '8'
+  - String:          ', Size: '
+  - Size:            '24'
+  - String:          "\nOffset: [SP"
+  - Offset:          '-4264'
+  - String:          '], Type: '
+  - Type:            Variable
+  - String:          ', Align: '
+  - Align:           '16'
+  - String:          ', Size: '
+  - Size:            '4096'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        main
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          CALL64pcrel32
+  - String:          ': '
+  - INST_CALL64pcrel32: '4'
+  - String:          "\n"
+  - String:          MOV32ri
+  - String:          ': '
+  - INST_MOV32ri:    '4'
+  - String:          "\n"
+  - String:          MOVAPSmr
+  - String:          ': '
+  - INST_MOVAPSmr:   '4'
+  - String:          "\n"
+  - String:          MOV64mr
+  - String:          ': '
+  - INST_MOV64mr:    '3'
+  - String:          "\n"
+  - String:          MOVDQAmr
+  - String:          ': '
+  - INST_MOVDQAmr:   '3'
+  - String:          "\n"
+  - String:          MOVDQArm
+  - String:          ': '
+  - INST_MOVDQArm:   '3'
+  - String:          "\n"
+  - String:          PUSH64r
+  - String:          ': '
+  - INST_PUSH64r:    '3'
+  - String:          "\n"
+  - String:          LEA64r
+  - String:          ': '
+  - INST_LEA64r:     '2'
+  - String:          "\n"
+  - String:          MOV64rr
+  - String:          ': '
+  - INST_MOV64rr:    '2'
+  - String:          "\n"
+  - String:          MOVAPSrm
+  - String:          ': '
+  - INST_MOVAPSrm:   '1'
+  - String:          "\n"
+  - String:          MOVQI2PQIrm
+  - String:          ': '
+  - INST_MOVQI2PQIrm: '1'
+  - String:          "\n"
+  - String:          PXORrr
+  - String:          ': '
+  - INST_PXORrr:     '1'
+  - String:          "\n"
+  - String:          SUB64rr
+  - String:          ': '
+  - INST_SUB64rr:    '1'
+  - String:          "\n"
+  - String:          XOR32rr
+  - String:          ': '
+  - INST_XOR32rr:    '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: example2.cpp, Line: 34, Column: 46 }
+Function:        main
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          MOVDQArr
+  - String:          ': '
+  - INST_MOVDQArr:   '7'
+  - String:          "\n"
+  - String:          PADDWrr
+  - String:          ': '
+  - INST_PADDWrr:    '6'
+  - String:          "\n"
+  - String:          PSRLWri
+  - String:          ': '
+  - INST_PSRLWri:    '4'
+  - String:          "\n"
+  - String:          PSUBWrr
+  - String:          ': '
+  - INST_PSUBWrr:    '4'
+  - String:          "\n"
+  - String:          ADDPSrr
+  - String:          ': '
+  - INST_ADDPSrr:    '2'
+  - String:          "\n"
+  - String:          CVTDQ2PSrr
+  - String:          ': '
+  - INST_CVTDQ2PSrr: '2'
+  - String:          "\n"
+  - String:          MOVUPSmr
+  - String:          ': '
+  - INST_MOVUPSmr:   '2'
+  - String:          "\n"
+  - String:          PMULHUWrr
+  - String:          ': '
+  - INST_PMULHUWrr:  '2'
+  - String:          "\n"
+  - String:          PSLLWri
+  - String:          ': '
+  - INST_PSLLWri:    '2'
+  - String:          "\n"
+  - String:          PUNPCKLWDrr
+  - String:          ': '
+  - INST_PUNPCKLWDrr: '2'
+  - String:          "\n"
+  - String:          ADD64ri32
+  - String:          ': '
+  - INST_ADD64ri32:  '1'
+  - String:          "\n"
+  - String:          CMP64ri32
+  - String:          ': '
+  - INST_CMP64ri32:  '1'
+  - String:          "\n"
+  - String:          JCC_1
+  - String:          ': '
+  - INST_JCC_1:      '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        main
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          MOVDQArm
+  - String:          ': '
+  - INST_MOVDQArm:   '9'
+  - String:          "\n"
+  - String:          MOV32ri
+  - String:          ': '
+  - INST_MOV32ri:    '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: example2.cpp, Line: 37, Column: 43 }
+Function:        main
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          MOVDQAmr
+  - String:          ': '
+  - INST_MOVDQAmr:   '8'
+  - String:          "\n"
+  - String:          PADDDrr
+  - String:          ': '
+  - INST_PADDDrr:    '8'
+  - String:          "\n"
+  - String:          MOVDQArr
+  - String:          ': '
+  - INST_MOVDQArr:   '7'
+  - String:          "\n"
+  - String:          ADD64ri32
+  - String:          ': '
+  - INST_ADD64ri32:  '1'
+  - String:          "\n"
+  - String:          CMP64ri32
+  - String:          ': '
+  - INST_CMP64ri32:  '1'
+  - String:          "\n"
+  - String:          JCC_1
+  - String:          ': '
+  - INST_JCC_1:      '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        main
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          MOVDQArm
+  - String:          ': '
+  - INST_MOVDQArm:   '5'
+  - String:          "\n"
+  - String:          PXORrr
+  - String:          ': '
+  - INST_PXORrr:     '3'
+  - String:          "\n"
+  - String:          CALL64pcrel32
+  - String:          ': '
+  - INST_CALL64pcrel32: '1'
+  - String:          "\n"
+  - String:          LEA64r
+  - String:          ': '
+  - INST_LEA64r:     '1'
+  - String:          "\n"
+  - String:          XOR32rr
+  - String:          ': '
+  - INST_XOR32rr:    '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: example2.cpp, Line: 27, Column: 16 }
+Function:        main
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          PSHUFDri
+  - String:          ': '
+  - INST_PSHUFDri:   '7'
+  - String:          "\n"
+  - String:          MOVDQArr
+  - String:          ': '
+  - INST_MOVDQArr:   '4'
+  - String:          "\n"
+  - String:          PMULUDQrr
+  - String:          ': '
+  - INST_PMULUDQrr:  '4'
+  - String:          "\n"
+  - String:          MOVDQArm
+  - String:          ': '
+  - INST_MOVDQArm:   '2'
+  - String:          "\n"
+  - String:          PADDDrr
+  - String:          ': '
+  - INST_PADDDrr:    '2'
+  - String:          "\n"
+  - String:          PADDQrr
+  - String:          ': '
+  - INST_PADDQrr:    '2'
+  - String:          "\n"
+  - String:          PANDrr
+  - String:          ': '
+  - INST_PANDrr:     '2'
+  - String:          "\n"
+  - String:          PUNPCKLDQrr
+  - String:          ': '
+  - INST_PUNPCKLDQrr: '2'
+  - String:          "\n"
+  - String:          ADD64ri32
+  - String:          ': '
+  - INST_ADD64ri32:  '1'
+  - String:          "\n"
+  - String:          CMP64ri32
+  - String:          ': '
+  - INST_CMP64ri32:  '1'
+  - String:          "\n"
+  - String:          JCC_1
+  - String:          ': '
+  - INST_JCC_1:      '1'
+  - String:          "\n"
+  - String:          PACKUSWBrr
+  - String:          ': '
+  - INST_PACKUSWBrr: '1'
+  - String:          "\n"
+  - String:          PCMPEQDrr
+  - String:          ': '
+  - INST_PCMPEQDrr:  '1'
+  - String:          "\n"
+  - String:          PSUBDrr
+  - String:          ': '
+  - INST_PSUBDrr:    '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: example2.cpp, Line: 26, Column: 5 }
+Function:        main
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          MOVAPSrm
+  - String:          ': '
+  - INST_MOVAPSrm:   '7'
+  - String:          "\n"
+  - String:          PADDDrr
+  - String:          ': '
+  - INST_PADDDrr:    '3'
+  - String:          "\n"
+  - String:          POP64r
+  - String:          ': '
+  - INST_POP64r:     '3'
+  - String:          "\n"
+  - String:          PSHUFDri
+  - String:          ': '
+  - INST_PSHUFDri:   '2'
+  - String:          "\n"
+  - String:          ADD32ri
+  - String:          ': '
+  - INST_ADD32ri:    '1'
+  - String:          "\n"
+  - String:          ADD64ri32
+  - String:          ': '
+  - INST_ADD64ri32:  '1'
+  - String:          "\n"
+  - String:          CALL64pcrel32
+  - String:          ': '
+  - INST_CALL64pcrel32: '1'
+  - String:          "\n"
+  - String:          LEA64_32r
+  - String:          ': '
+  - INST_LEA64_32r:  '1'
+  - String:          "\n"
+  - String:          MOV32rr
+  - String:          ': '
+  - INST_MOV32rr:    '1'
+  - String:          "\n"
+  - String:          MOV64rr
+  - String:          ': '
+  - INST_MOV64rr:    '1'
+  - String:          "\n"
+  - String:          MOVPDI2DIrr
+  - String:          ': '
+  - INST_MOVPDI2DIrr: '1'
+  - String:          "\n"
+  - String:          RET64
+  - String:          ': '
+  - INST_RET64:      '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: example2.cpp, Line: 32, Column: 0 }
+Function:        main
+Args:
+  - NumInstructions: '170'
+  - String:          ' instructions in function'
+...

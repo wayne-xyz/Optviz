@@ -42,7 +42,7 @@ A VS Code extension for visualizing optimization insights from LLVM, NVCC, XLA a
 1.  **Open your project** in VS Code that contains compiler optimization remark files (e.g., LLVM's `.opt.yaml` files).
 2.  **Generate Optimization Remarks:** Ensure you have already compiled your code with the necessary flags to produce optimization remark files. For example, with Clang (LLVM):
     ```bash
-    clang -O3 -Rpass=.* -Rpass-missed=.* -Rpass-analysis=.* -fsave-optimization-record your_code.c -o your_executable
+    clang -O3 -Rpass='.*' -Rpass-missed='.*' -Rpass-analysis='.*' -fsave-optimization-record yourcode.cpp -o yourcode.exe
     ```
     This will typically produce a `your_code.opt.yaml` file (or similar, depending on your source file names and compiler version) in the build directory.
 3.  **Open the Command Palette:**
