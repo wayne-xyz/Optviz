@@ -1,6 +1,6 @@
 # Optviz
 
-A VS Code extension for visualizing optimization insights from LLVM, NVCC, XLA and more compilers.
+A VS Code extension for visualizing optimization insights from LLVM ( More compiler will be support)
 
 ## Features
 
